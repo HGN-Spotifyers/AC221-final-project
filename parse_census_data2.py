@@ -20,6 +20,8 @@ base_path = 'data/census_data/'
 
 age_file = 'population_age_sex_by_county_usa_18.csv'
 employment_file = 'employment_status_by_county_usa_18.csv'
+computer_internet_file = 'computer_and_internet_by_county_usa_18.csv'
+urban_rural_file = 'NCHSURCodes2013.xlsx'
 
 base_out_path = 'data/clean_census_data/'
 
@@ -73,6 +75,56 @@ clean_employment.columns = ["Labor Force Participation Rate"]
 # Add identifier columns:
 clean_employment = pd.concat([clean_employment_id,clean_employment],axis=1,sort=False)
 
+###################
+# Smartphone data #
+###################
+
+computer_internet_df = pd.read_csv(base_path + computer_internet_file)
+
+clean_computer_internet = unpack_multi_index(computer_internet_df)
+clean_computer_internet_id = clean_computer_internet[[("id"),("Geographic Area Name")]]
+clean_computer_internet_id.columns = ["id","Geographic Area Name"]
+clean_computer_internet_id.columns.name = None
+
+# Get employment breakdowns for total population:
+col_total_households = clean_computer_internet[(
+    "Estimate","Total","Total households",
+)].replace('N',np.nan).astype(int)
+col_has_smartphone = clean_computer_internet[(
+    "Estimate","Total","TYPES OF COMPUTER",
+    "Has one or more types of computing devices","Smartphone",""
+)].replace('N',np.nan).astype(int)
+
+clean_computer_internet = clean_computer_internet_id
+clean_computer_internet['total_households'] = col_total_households
+clean_computer_internet['smartphone_households'] = col_has_smartphone
+clean_computer_internet['smartphone_ownership'] = clean_computer_internet['smartphone_households']/clean_computer_internet['total_households']
+
+
+####################
+# Urban/Rural data #
+####################
+
+urban_rural_df = pd.read_excel(base_path + urban_rural_file)
+
+def _convert_code(number):
+    return {
+        1 : 'Large central metro',
+        2 : 'Large fringe metro',
+        3 : 'Medium metro',
+        4 : 'Small metro',
+        5 : 'Micropolitan',
+        6 : 'Noncore',
+    }[number]
+
+def _format_id(number):
+    return '0500000US{:0>5}'.format(number)
+
+clean_urban_rural = urban_rural_df.copy()
+
+clean_urban_rural.insert(0,'id',clean_urban_rural['FIPS code'].apply(_format_id))
+clean_urban_rural['type_2013'] = clean_urban_rural['2013 code'].apply(_convert_code)
+
 
 # ========= SAVE OUTPUTS =========
 
@@ -81,3 +133,7 @@ clean_age_male.to_csv(base_out_path + 'age_information_male.csv', index = False)
 clean_age_female.to_csv(base_out_path + 'age_information_female.csv', index = False)
 
 clean_employment.to_csv(base_out_path + 'employment_status.csv', index = False)
+
+clean_computer_internet.to_csv(base_out_path + 'computer_internet.csv', index = False)
+
+clean_urban_rural.to_csv(base_out_path + 'urban_rural_by_county.csv', index = False)
