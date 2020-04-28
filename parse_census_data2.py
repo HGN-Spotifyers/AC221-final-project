@@ -22,6 +22,7 @@ age_file = 'population_age_sex_by_county_usa_18.csv'
 employment_file = 'employment_status_by_county_usa_18.csv'
 computer_internet_file = 'computer_and_internet_by_county_usa_18.csv'
 urban_rural_file = 'NCHSURCodes2013.xlsx'
+commuting_file = 'Residence County to Workplace County Commuting Flows.xlsx'
 
 base_out_path = 'data/clean_census_data/'
 
@@ -100,7 +101,6 @@ clean_computer_internet['total_households'] = col_total_households
 clean_computer_internet['smartphone_households'] = col_has_smartphone
 clean_computer_internet['smartphone_ownership'] = clean_computer_internet['smartphone_households']/clean_computer_internet['total_households']
 
-
 ####################
 # Urban/Rural data #
 ####################
@@ -125,6 +125,47 @@ clean_urban_rural = urban_rural_df.copy()
 clean_urban_rural.insert(0,'id',clean_urban_rural['FIPS code'].apply(_format_id))
 clean_urban_rural['type_2013'] = clean_urban_rural['2013 code'].apply(_convert_code)
 
+####################
+# Urban/Rural data #
+####################
+
+commuting_df = pd.read_excel('data/census_data/Residence County to Workplace County Commuting Flows.xlsx',skiprows=6)
+commuting_df = commuting_df.iloc[:-2]
+
+clean_commuting = commuting_df.copy()
+
+def _is_same_county(row):
+    try:
+        if int(row['State FIPS Code'])!=int(row['State FIPS Code.1']):
+            return False
+        elif int(row['County FIPS Code'])!=int(row['County FIPS Code.1']):
+            return False
+        else:
+            return True
+    except:
+        return False
+
+clean_commuting['same_county'] = clean_commuting.apply(_is_same_county,axis=1)
+
+clean_commuting = clean_commuting.groupby([
+    'State FIPS Code','County FIPS Code','State Name','County Name','same_county',
+])[['Workers in Commuting Flow']].sum()
+
+clean_commuting = clean_commuting.unstack(-1).reset_index()
+clean_commuting.columns = [
+    'State FIPS Code','County FIPS Code','State Name','County Name','number_work_in_county','number_work_out_of_county'
+]
+clean_commuting['id'] = [
+    "0500000US{:0>2}{:0>3}".format(int(state),int(county))
+    for state,county in zip(clean_commuting['State FIPS Code'],clean_commuting['County FIPS Code'])
+]
+clean_commuting['number_work_in_county'] = clean_commuting['number_work_in_county'].fillna(0).astype(int)
+clean_commuting['number_work_out_of_county'] = clean_commuting['number_work_out_of_county'].fillna(0).astype(int)
+
+clean_commuting = clean_commuting[[
+    'id','State Name','County Name','number_work_in_county','number_work_out_of_county',
+]]
+
 
 # ========= SAVE OUTPUTS =========
 
@@ -137,3 +178,7 @@ clean_employment.to_csv(base_out_path + 'employment_status.csv', index = False)
 clean_computer_internet.to_csv(base_out_path + 'computer_internet.csv', index = False)
 
 clean_urban_rural.to_csv(base_out_path + 'urban_rural_by_county.csv', index = False)
+
+clean_commuting.to_csv(base_out_path + 'commuting.csv', index = False)
+
+
