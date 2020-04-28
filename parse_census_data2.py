@@ -19,6 +19,10 @@ if not 'clean_census_data' in all_folders:
 base_path = 'data/census_data/'
 
 age_file = 'population_age_sex_by_county_usa_18.csv'
+employment_file = 'employment_status_by_county_usa_18.csv'
+computer_internet_file = 'computer_and_internet_by_county_usa_18.csv'
+urban_rural_file = 'NCHSURCodes2013.xlsx'
+commuting_file = 'Residence County to Workplace County Commuting Flows.xlsx'
 
 base_out_path = 'data/clean_census_data/'
 
@@ -27,21 +31,140 @@ base_out_path = 'data/clean_census_data/'
 
 # ========= DATA PROCESSING ============
 
+#############
+# Age Table #
+#############
 
-# Age Table
 age_df = pd.read_csv(base_path + age_file)
 
 clean_age = unpack_multi_index(age_df)
+clean_age_id = clean_age[[("id"),("Geographic Area Name")]]
+clean_age_id.columns = ["id","Geographic Area Name"]
+clean_age_id.columns.name = None
 
 # Get age breakdowns for total population:
 clean_age_total  = clean_age[("Estimate","Total" ,"Total population","SELECTED AGE CATEGORIES",)]
 clean_age_male   = clean_age[("Estimate","Male"  ,"Total population","SELECTED AGE CATEGORIES",)]
 clean_age_female = clean_age[("Estimate","Female","Total population","SELECTED AGE CATEGORIES",)]
 
+# Add identifier columns:
+clean_age_total = pd.concat([clean_age_id,clean_age_total],axis=1,sort=False)
+clean_age_male = pd.concat([clean_age_id,clean_age_male],axis=1,sort=False)
+clean_age_female = pd.concat([clean_age_id,clean_age_female],axis=1,sort=False)
+
 # Remove column index name:
 clean_age_total.columns.name = None
 clean_age_male.columns.name = None
 clean_age_female.columns.name = None
+
+####################
+# Employment Table #
+####################
+
+employment_df = pd.read_csv(base_path + employment_file)
+
+clean_employment = unpack_multi_index(employment_df)
+clean_employment_id = clean_employment[[("id"),("Geographic Area Name")]]
+clean_employment_id.columns = ["id","Geographic Area Name"]
+clean_employment_id.columns.name = None
+
+# Get employment breakdowns for total population:
+clean_employment= clean_employment[("Estimate","Labor Force Participation Rate","Population 16 years and over")]
+clean_employment = clean_employment[[""]]
+clean_employment.columns = ["Labor Force Participation Rate"]
+
+# Add identifier columns:
+clean_employment = pd.concat([clean_employment_id,clean_employment],axis=1,sort=False)
+
+###################
+# Smartphone data #
+###################
+
+computer_internet_df = pd.read_csv(base_path + computer_internet_file)
+
+clean_computer_internet = unpack_multi_index(computer_internet_df)
+clean_computer_internet_id = clean_computer_internet[[("id"),("Geographic Area Name")]]
+clean_computer_internet_id.columns = ["id","Geographic Area Name"]
+clean_computer_internet_id.columns.name = None
+
+# Get employment breakdowns for total population:
+col_total_households = clean_computer_internet[(
+    "Estimate","Total","Total households",
+)].replace('N',np.nan).astype(int)
+col_has_smartphone = clean_computer_internet[(
+    "Estimate","Total","TYPES OF COMPUTER",
+    "Has one or more types of computing devices","Smartphone",""
+)].replace('N',np.nan).astype(int)
+
+clean_computer_internet = clean_computer_internet_id
+clean_computer_internet['total_households'] = col_total_households
+clean_computer_internet['smartphone_households'] = col_has_smartphone
+clean_computer_internet['smartphone_ownership'] = clean_computer_internet['smartphone_households']/clean_computer_internet['total_households']
+
+####################
+# Urban/Rural data #
+####################
+
+urban_rural_df = pd.read_excel(base_path + urban_rural_file)
+
+def _convert_code(number):
+    return {
+        1 : 'Large central metro',
+        2 : 'Large fringe metro',
+        3 : 'Medium metro',
+        4 : 'Small metro',
+        5 : 'Micropolitan',
+        6 : 'Noncore',
+    }[number]
+
+def _format_id(number):
+    return '0500000US{:0>5}'.format(number)
+
+clean_urban_rural = urban_rural_df.copy()
+
+clean_urban_rural.insert(0,'id',clean_urban_rural['FIPS code'].apply(_format_id))
+clean_urban_rural['type_2013'] = clean_urban_rural['2013 code'].apply(_convert_code)
+
+####################
+# Urban/Rural data #
+####################
+
+commuting_df = pd.read_excel('data/census_data/Residence County to Workplace County Commuting Flows.xlsx',skiprows=6)
+commuting_df = commuting_df.iloc[:-2]
+
+clean_commuting = commuting_df.copy()
+
+def _is_same_county(row):
+    try:
+        if int(row['State FIPS Code'])!=int(row['State FIPS Code.1']):
+            return False
+        elif int(row['County FIPS Code'])!=int(row['County FIPS Code.1']):
+            return False
+        else:
+            return True
+    except:
+        return False
+
+clean_commuting['same_county'] = clean_commuting.apply(_is_same_county,axis=1)
+
+clean_commuting = clean_commuting.groupby([
+    'State FIPS Code','County FIPS Code','State Name','County Name','same_county',
+])[['Workers in Commuting Flow']].sum()
+
+clean_commuting = clean_commuting.unstack(-1).reset_index()
+clean_commuting.columns = [
+    'State FIPS Code','County FIPS Code','State Name','County Name','number_work_in_county','number_work_out_of_county'
+]
+clean_commuting['id'] = [
+    "0500000US{:0>2}{:0>3}".format(int(state),int(county))
+    for state,county in zip(clean_commuting['State FIPS Code'],clean_commuting['County FIPS Code'])
+]
+clean_commuting['number_work_in_county'] = clean_commuting['number_work_in_county'].fillna(0).astype(int)
+clean_commuting['number_work_out_of_county'] = clean_commuting['number_work_out_of_county'].fillna(0).astype(int)
+
+clean_commuting = clean_commuting[[
+    'id','State Name','County Name','number_work_in_county','number_work_out_of_county',
+]]
 
 
 # ========= SAVE OUTPUTS =========
@@ -49,3 +172,13 @@ clean_age_female.columns.name = None
 clean_age_total.to_csv(base_out_path + 'age_information_total.csv', index = False)
 clean_age_male.to_csv(base_out_path + 'age_information_male.csv', index = False)
 clean_age_female.to_csv(base_out_path + 'age_information_female.csv', index = False)
+
+clean_employment.to_csv(base_out_path + 'employment_status.csv', index = False)
+
+clean_computer_internet.to_csv(base_out_path + 'computer_internet.csv', index = False)
+
+clean_urban_rural.to_csv(base_out_path + 'urban_rural_by_county.csv', index = False)
+
+clean_commuting.to_csv(base_out_path + 'commuting.csv', index = False)
+
+
