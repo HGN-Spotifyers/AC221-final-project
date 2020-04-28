@@ -19,7 +19,7 @@ if not 'clean_census_data' in all_folders:
 base_path = 'data/census_data/'
 
 age_file = 'population_age_sex_by_county_usa_18.csv'
-employment_file = 'employment_status_by_county_usa_18.csv'
+employment_file = 'ACSST1Y2018.S2301/ACSST1Y2018.S2301_data_with_overlays.csv'
 computer_internet_file = 'computer_and_internet_by_county_usa_18.csv'
 urban_rural_file = 'NCHSURCodes2013.xlsx'
 commuting_file = 'Residence County to Workplace County Commuting Flows.xlsx'
