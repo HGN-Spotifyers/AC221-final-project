@@ -18,7 +18,7 @@ if not 'clean_census_data' in all_folders:
 # ========= USER SETUP ============
 base_path = 'data/census_data/'
 
-age_file = 'population_age_sex_by_county_usa_18.csv'
+age_file = 'ACSST1Y2018.S0101/ACSST1Y2018.S0101_data_with_overlays.csv'
 employment_file = 'ACSST1Y2018.S2301/ACSST1Y2018.S2301_data_with_overlays.csv'
 computer_internet_file = 'ACSST1Y2018.S2801/ACSST1Y2018.S2801_data_with_overlays.csv'
 urban_rural_file = 'NCHSURCodes2013.xlsx'
