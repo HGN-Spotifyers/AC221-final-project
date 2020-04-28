@@ -387,6 +387,11 @@ class Metric:
         # Check inputs:
         assert len(before) == len(after)
         
+        valid_methods = ['median_person','average_person','skews_grocery']
+        assert method in valid_methods, "{} is not a valid method: {} .".format(
+            method,", ".join(valid_methods)
+        )
+        
         # Set random state:
         np.random.seed(random_state)
         
