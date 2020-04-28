@@ -32,11 +32,19 @@ base_out_path = 'data/clean_census_data/'
 age_df = pd.read_csv(base_path + age_file)
 
 clean_age = unpack_multi_index(age_df)
+clean_age_id = clean_age[[("id"),("Geographic Area Name")]]
+clean_age_id.columns = ["id","Geographic Area Name"]
+clean_age_id.columns.name = None
 
 # Get age breakdowns for total population:
 clean_age_total  = clean_age[("Estimate","Total" ,"Total population","SELECTED AGE CATEGORIES",)]
 clean_age_male   = clean_age[("Estimate","Male"  ,"Total population","SELECTED AGE CATEGORIES",)]
 clean_age_female = clean_age[("Estimate","Female","Total population","SELECTED AGE CATEGORIES",)]
+
+# Add identifier columns:
+clean_age_total = pd.concat([clean_age_id,clean_age_total],axis=1,sort=False)
+clean_age_male = pd.concat([clean_age_id,clean_age_male],axis=1,sort=False)
+clean_age_female = pd.concat([clean_age_id,clean_age_female],axis=1,sort=False)
 
 # Remove column index name:
 clean_age_total.columns.name = None
