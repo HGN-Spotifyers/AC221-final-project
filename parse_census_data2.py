@@ -19,6 +19,7 @@ if not 'clean_census_data' in all_folders:
 base_path = 'data/census_data/'
 
 age_file = 'ACSST1Y2018.S0101/ACSST1Y2018.S0101_data_with_overlays.csv'
+income_file = 'ACSST1Y2018.S2503/ACSST1Y2018.S1901_data_with_overlays.csv'
 employment_file = 'ACSST1Y2018.S2301/ACSST1Y2018.S2301_data_with_overlays.csv'
 computer_internet_file = 'ACSST1Y2018.S2801/ACSST1Y2018.S2801_data_with_overlays.csv'
 urban_rural_file = 'NCHSURCodes2013.xlsx'
@@ -56,6 +57,25 @@ clean_age_female = pd.concat([clean_age_id,clean_age_female],axis=1,sort=False)
 clean_age_total.columns.name = None
 clean_age_male.columns.name = None
 clean_age_female.columns.name = None
+
+################
+# Income Table #
+################
+
+#income_df = pd.read_csv(base_path + income_file)
+#
+#clean_income = unpack_multi_index(income_df)
+#clean_income_id = clean_income[[("id"),("Geographic Area Name")]]
+#clean_income_id.columns = ["id","Geographic Area Name"]
+#clean_income_id.columns.name = None
+#
+## Get income breakdowns for total population:
+#clean_income= clean_income[("Estimate","Labor Force Participation Rate","Population 16 years and over")]
+#clean_income = clean_income[[""]]
+#clean_income.columns = ["Labor Force Participation Rate"]
+#
+## Add identifier columns:
+#clean_income = pd.concat([clean_income_id,clean_income],axis=1,sort=False)
 
 ####################
 # Employment Table #
@@ -169,16 +189,16 @@ clean_commuting = clean_commuting[[
 
 # ========= SAVE OUTPUTS =========
 
-clean_age_total.to_csv(base_out_path + 'age_information_total.csv', index = False)
-clean_age_male.to_csv(base_out_path + 'age_information_male.csv', index = False)
-clean_age_female.to_csv(base_out_path + 'age_information_female.csv', index = False)
+clean_age.to_csv(base_out_path + 'ACSST1Y2018_S0101_age.csv', index = False)
 
-clean_employment.to_csv(base_out_path + 'employment_status.csv', index = False)
+#clean_income.to_csv(base_out_path + 'ACSST1Y2018_S2503_income.csv', index = False)
 
-clean_computer_internet.to_csv(base_out_path + 'computer_internet.csv', index = False)
+clean_employment.to_csv(base_out_path + 'ACSST1Y2018_S2301_employment.csv', index = False)
 
-clean_urban_rural.to_csv(base_out_path + 'urban_rural_by_county.csv', index = False)
+clean_computer_internet.to_csv(base_out_path + 'ACSST1Y2018_S2801_internet.csv', index = False)
 
-clean_commuting.to_csv(base_out_path + 'commuting.csv', index = False)
+clean_urban_rural.to_csv(base_out_path + 'NCHSURCodes2013_urbanrural.csv', index = False)
+
+clean_commuting.to_csv(base_out_path + 'ACSCommutingFlows.csv', index = False)
 
 
