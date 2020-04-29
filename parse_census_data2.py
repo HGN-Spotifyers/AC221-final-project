@@ -18,8 +18,8 @@ if not 'clean_census_data' in all_folders:
 # ========= USER SETUP ============
 base_path = 'data/census_data/'
 
-age_file = 'ACSST1Y2018.S0101/ACSST1Y2018.S0101_data_with_overlays.csv'
-income_file = 'ACSST1Y2018.S2503/ACSST1Y2018.S1901_data_with_overlays.csv'
+population_file = 'ACSST1Y2018.S0101/ACSST1Y2018.S0101_data_with_overlays.csv'
+income_file = 'ACSST1Y2018.S1901/ACSST1Y2018.S1901_data_with_overlays.csv'
 employment_file = 'ACSST1Y2018.S2301/ACSST1Y2018.S2301_data_with_overlays.csv'
 computer_internet_file = 'ACSST1Y2018.S2801/ACSST1Y2018.S2801_data_with_overlays.csv'
 urban_rural_file = 'NCHSURCodes2013.xlsx'
@@ -36,46 +36,50 @@ base_out_path = 'data/clean_census_data/'
 # Age Table #
 #############
 
-age_df = pd.read_csv(base_path + age_file)
+population_df = pd.read_csv(base_path + population_file)
 
-clean_age = unpack_multi_index(age_df)
-clean_age_id = clean_age[[("id"),("Geographic Area Name")]]
-clean_age_id.columns = ["id","Geographic Area Name"]
-clean_age_id.columns.name = None
+clean_population = unpack_multi_index(population_df)
+clean_population_id = clean_population[[("id"),("Geographic Area Name")]]
+clean_population_id.columns = ["id","Geographic Area Name"]
+clean_population_id.columns.name = None
 
-# Get age breakdowns for total population:
-clean_age_total  = clean_age[("Estimate","Total" ,"Total population","SELECTED AGE CATEGORIES",)]
-clean_age_male   = clean_age[("Estimate","Male"  ,"Total population","SELECTED AGE CATEGORIES",)]
-clean_age_female = clean_age[("Estimate","Female","Total population","SELECTED AGE CATEGORIES",)]
+# Get population breakdown by age and gender:
+clean_population_all       = clean_population[("Estimate","Total" ,"Total population","SELECTED AGE CATEGORIES",)]
+clean_population_male      = clean_population[("Estimate","Male"  ,"Total population","SELECTED AGE CATEGORIES",)]
+clean_population_female    = clean_population[("Estimate","Female","Total population","SELECTED AGE CATEGORIES",)]
+clean_population_total_col = clean_population[("Estimate","Total" ,"Total population","",)]
+
+# Prepend subcategory to column name:
+clean_population_male.columns = ["Male - {}".format(col) for col in clean_population_male.columns]
+clean_population_female.columns = ["Female - {}".format(col) for col in clean_population_male.columns]
 
 # Add identifier columns:
-clean_age_total = pd.concat([clean_age_id,clean_age_total],axis=1,sort=False)
-clean_age_male = pd.concat([clean_age_id,clean_age_male],axis=1,sort=False)
-clean_age_female = pd.concat([clean_age_id,clean_age_female],axis=1,sort=False)
+clean_population = pd.concat([clean_population_id,clean_population_all,clean_population_male,clean_population_female],axis=1,sort=False)
+clean_population.insert(0,"Total Population",clean_population_total_col)
 
 # Remove column index name:
-clean_age_total.columns.name = None
-clean_age_male.columns.name = None
-clean_age_female.columns.name = None
+clean_population.columns.name = None
 
 ################
 # Income Table #
 ################
 
-#income_df = pd.read_csv(base_path + income_file)
-#
-#clean_income = unpack_multi_index(income_df)
-#clean_income_id = clean_income[[("id"),("Geographic Area Name")]]
-#clean_income_id.columns = ["id","Geographic Area Name"]
-#clean_income_id.columns.name = None
-#
-## Get income breakdowns for total population:
-#clean_income= clean_income[("Estimate","Labor Force Participation Rate","Population 16 years and over")]
-#clean_income = clean_income[[""]]
-#clean_income.columns = ["Labor Force Participation Rate"]
-#
-## Add identifier columns:
-#clean_income = pd.concat([clean_income_id,clean_income],axis=1,sort=False)
+income_df = pd.read_csv(base_path + income_file)
+
+clean_income = unpack_multi_index(income_df)
+clean_income_id = clean_income[[("id"),("Geographic Area Name")]]
+clean_income_id.columns = ["id","Geographic Area Name"]
+clean_income_id.columns.name = None
+
+# Get income breakdowns for total population:
+clean_income_breakdown = clean_income[("Estimate","Households","Total")]
+clean_income_median_col = clean_income[("Estimate","Households","Median income (dollars)")]
+clean_income_mean_col = clean_income[("Estimate","Households","Mean income (dollars)")]
+
+# Add identifier columns:
+clean_income = pd.concat([clean_income_id,clean_income_breakdown],axis=1,sort=False)
+clean_income["Median income (dollars)"] = clean_income_median_col
+clean_income["Mean income (dollars)"] = clean_income_mean_col
 
 ####################
 # Employment Table #
@@ -89,7 +93,7 @@ clean_employment_id.columns = ["id","Geographic Area Name"]
 clean_employment_id.columns.name = None
 
 # Get employment breakdowns for total population:
-clean_employment= clean_employment[("Estimate","Labor Force Participation Rate","Population 16 years and over")]
+clean_employment = clean_employment[("Estimate","Labor Force Participation Rate","Population 16 years and over")]
 clean_employment = clean_employment[[""]]
 clean_employment.columns = ["Labor Force Participation Rate"]
 
@@ -189,9 +193,9 @@ clean_commuting = clean_commuting[[
 
 # ========= SAVE OUTPUTS =========
 
-clean_age.to_csv(base_out_path + 'ACSST1Y2018_S0101_age.csv', index = False)
+clean_population.to_csv(base_out_path + 'ACSST1Y2018_S0101_population.csv', index = False)
 
-#clean_income.to_csv(base_out_path + 'ACSST1Y2018_S2503_income.csv', index = False)
+clean_income.to_csv(base_out_path + 'ACSST1Y2018_S2503_income.csv', index = False)
 
 clean_employment.to_csv(base_out_path + 'ACSST1Y2018_S2301_employment.csv', index = False)
 
