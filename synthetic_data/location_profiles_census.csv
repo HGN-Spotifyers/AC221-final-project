@@ -1,4 +1,4 @@
-location_id,location_county,location_state,location_name,wealth_status,employment_status,phoneownership_rate,worktravel_baseline,worktravel_variance,socialtravel_baseline,socialtravel_variance,grocerytravel_baseline,grocerytravel_variance
+location_id,location_county,location_state,location_name,wealth_status,employment_status,phoneownership_rate,worktravel_mean,worktravel_std,socialtravel_mean,socialtravel_std,grocerytravel_mean,grocerytravel_std
 0500000US21093,Hardin County,Kentucky,"Hardin County, Kentucky",0,0,0.730308737635439,22.20609827092134,53.32719975515407,19.466365457410117,51.60317016721971,14.129961989216996,43.37822371185904
 0500000US21093,Hardin County,Kentucky,"Hardin County, Kentucky",0,1,0.730308737635439,22.20609827092134,53.32719975515407,19.466365457410117,51.60317016721971,14.129961989216996,43.37822371185904
 0500000US21093,Hardin County,Kentucky,"Hardin County, Kentucky",1,0,0.9093234674062493,24.959807685236285,36.31413208025685,20.90694216351306,62.22575171134548,16.57011795703283,57.67050250591144

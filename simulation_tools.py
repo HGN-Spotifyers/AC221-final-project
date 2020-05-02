@@ -32,9 +32,12 @@ class Population:
                 wealth_status : (boolean) 0 represents low income and 1 represents high income.
                 employment_status : (string) 0 represents unemployed and 1 represents employed.
                 phoneownership_rate : (float) Probability between 0 and 1 that a resident owns a cellpone.
-                worktravel_baseline : (float) Distance in miles of baseline for work-related travel.
-                socialtravel_baseline : (float) Distance in miles of baseline for social-related travel.
-                grocerytravel_baseline : (float) Distance in miles of baseline for grocery-related travel.
+                worktravel_baseline : (float) Distance in miles of baseline (mean) for work-related travel.
+                socialtravel_baseline : (float) Distance in miles of baseline (mean) for social-related travel.
+                grocerytravel_baseline : (float) Distance in miles of baseline (mean) for grocery-related travel.
+                worktravel_std : (float) Standard deviation baseline for work-related travel.
+                socialtravel_std : (float) Standard deviation baseline for social-related travel.
+                grocerytravel_std : (float) Standard deviation baseline for grocery-related travel.
                 
             :param population_name: (string) Unique identifier of simulation run, or None.
                 
@@ -101,12 +104,12 @@ class Population:
                 location_name = attribute_row['location_name']
                 location_density = attribute_row['density']
                 phoneownership_prob = profile_row['phoneownership_rate']
-                worktravel_mean = profile_row['worktravel_baseline']
-                socialtravel_mean = profile_row['socialtravel_baseline']
-                grocerytravel_mean = profile_row['grocerytravel_baseline']
-                worktravel_variance = worktravel_mean/10
-                socialtravel_variance = socialtravel_mean/10
-                grocerytravel_variance = grocerytravel_mean/10
+                worktravel_mean = profile_row['worktravel_mean']
+                socialtravel_mean = profile_row['socialtravel_mean']
+                grocerytravel_mean = profile_row['grocerytravel_mean']
+                worktravel_variance = profile_row['worktravel_std']**2
+                socialtravel_variance = profile_row['socialtravel_std']**2
+                grocerytravel_variance = profile_row['grocerytravel_std']**2
                 subgroup_population_rounded = int(np.round(subgroup_population,0))
                 for p in range(subgroup_population_rounded):
                     Population.PEOPLE += 1
@@ -215,14 +218,17 @@ class Population:
                         assert len(vals)==1, "Found multiple values for column {} conditional on {}: {}".format(
                             value_col,subgroup_label(condition_cols,g),vals
                         )
-            # Make sure that phoneownership_rate depends only on wealth_status (for this locaiton):
+            # Make sure that phoneownership rate depends only on wealth status (for this location):
             verify_unique('phoneownership_rate',['wealth_status'])
-            # Make sure that worktravel_baseline depends only on employment_status (for this locaiton):
-            verify_unique('worktravel_baseline',['employment_status'])
-            # Make sure that worktravel_baseline depends only on wealth_status (for this locaiton):
-            verify_unique('socialtravel_baseline',['wealth_status'])
-            # Make sure that grocerytravel_baseline is unconditional (for this locaiton):
-            verify_unique('grocerytravel_baseline',None)
+            # Make sure that worktravel baseline depends only on wealth and employment status (for this location):
+            verify_unique('worktravel_mean',['wealth_status','employment_status'])
+            verify_unique('worktravel_std',['wealth_status','employment_status'])
+            # Make sure that social baseline depends only on wealth status (for this location):
+            verify_unique('socialtravel_mean',['wealth_status'])
+            verify_unique('socialtravel_std',['wealth_status'])
+            # Make sure that grocerytravel baseline depends only on wealth status (for this location):
+            verify_unique('grocerytravel_mean',['wealth_status'])
+            verify_unique('grocerytravel_std',['wealth_status'])
     
     @property
     def population_name(self):

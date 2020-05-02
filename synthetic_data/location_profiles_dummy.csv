@@ -1,4 +1,4 @@
-location_name,wealth_status,employment_status,phoneownership_rate,worktravel_baseline,socialtravel_baseline,grocerytravel_baseline,worktravel_std,socialtravel_std,grocerytravel_std
+location_name,wealth_status,employment_status,phoneownership_rate,worktravel_mean,socialtravel_mean,grocerytravel_mean,worktravel_std,socialtravel_std,grocerytravel_std
 loc1,0,0,0.7,0,50,10,0.0,2.23606797749979,1.0
 loc1,0,1,0.7,100,50,10,3.1622776601683795,2.23606797749979,1.0
 loc1,1,0,0.9,0,50,10,0.0,2.23606797749979,1.0
