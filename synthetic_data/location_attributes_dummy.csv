@@ -1,0 +1,9 @@
+location_name,density,population,employment_rate,wealth_rate
+loc1,rural,3000,0.7,0.6
+loc2,rural,7000,0.7,0.7
+loc3,rural,4000,0.6,0.4
+loc4,rural,3000,0.6,0.5
+loc5,urban,1000,0.6,0.5
+loc6,urban,2000,0.6,0.5
+loc7,urban,3000,0.8,0.5
+loc8,urban,2000,0.7,0.5

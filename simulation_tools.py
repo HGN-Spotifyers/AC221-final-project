@@ -32,9 +32,12 @@ class Population:
                 wealth_status : (boolean) 0 represents low income and 1 represents high income.
                 employment_status : (string) 0 represents unemployed and 1 represents employed.
                 phoneownership_rate : (float) Probability between 0 and 1 that a resident owns a cellpone.
-                worktravel_baseline : (float) Distance in miles of baseline for work-related travel.
-                socialtravel_baseline : (float) Distance in miles of baseline for social-related travel.
-                grocerytravel_baseline : (float) Distance in miles of baseline for grocery-related travel.
+                worktravel_baseline : (float) Distance in miles of baseline (mean) for work-related travel.
+                socialtravel_baseline : (float) Distance in miles of baseline (mean) for social-related travel.
+                grocerytravel_baseline : (float) Distance in miles of baseline (mean) for grocery-related travel.
+                worktravel_std : (float) Standard deviation baseline for work-related travel.
+                socialtravel_std : (float) Standard deviation baseline for social-related travel.
+                grocerytravel_std : (float) Standard deviation baseline for grocery-related travel.
                 
             :param population_name: (string) Unique identifier of simulation run, or None.
                 
@@ -101,12 +104,12 @@ class Population:
                 location_name = attribute_row['location_name']
                 location_density = attribute_row['density']
                 phoneownership_prob = profile_row['phoneownership_rate']
-                worktravel_mean = profile_row['worktravel_baseline']
-                socialtravel_mean = profile_row['socialtravel_baseline']
-                grocerytravel_mean = profile_row['grocerytravel_baseline']
-                worktravel_variance = worktravel_mean/10
-                socialtravel_variance = socialtravel_mean/10
-                grocerytravel_variance = grocerytravel_mean/10
+                worktravel_mean = profile_row['worktravel_mean']
+                socialtravel_mean = profile_row['socialtravel_mean']
+                grocerytravel_mean = profile_row['grocerytravel_mean']
+                worktravel_variance = profile_row['worktravel_std']**2
+                socialtravel_variance = profile_row['socialtravel_std']**2
+                grocerytravel_variance = profile_row['grocerytravel_std']**2
                 subgroup_population_rounded = int(np.round(subgroup_population,0))
                 for p in range(subgroup_population_rounded):
                     Population.PEOPLE += 1
@@ -165,7 +168,7 @@ class Population:
         census['travel'] = census[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
         census = census.sort_index()
         if wide:
-            raise NotImplemented()
+            raise NotImplementedError("Wide format is not implemented.")
         return census
         
     def check_location_profiles(self):
@@ -215,14 +218,17 @@ class Population:
                         assert len(vals)==1, "Found multiple values for column {} conditional on {}: {}".format(
                             value_col,subgroup_label(condition_cols,g),vals
                         )
-            # Make sure that phoneownership_rate depends only on wealth_status (for this locaiton):
+            # Make sure that phoneownership rate depends only on wealth status (for this location):
             verify_unique('phoneownership_rate',['wealth_status'])
-            # Make sure that worktravel_baseline depends only on employment_status (for this locaiton):
-            verify_unique('worktravel_baseline',['employment_status'])
-            # Make sure that worktravel_baseline depends only on wealth_status (for this locaiton):
-            verify_unique('socialtravel_baseline',['wealth_status'])
-            # Make sure that grocerytravel_baseline is unconditional (for this locaiton):
-            verify_unique('grocerytravel_baseline',None)
+            # Make sure that worktravel baseline depends only on wealth and employment status (for this location):
+            verify_unique('worktravel_mean',['wealth_status','employment_status'])
+            verify_unique('worktravel_std',['wealth_status','employment_status'])
+            # Make sure that social baseline depends only on wealth status (for this location):
+            verify_unique('socialtravel_mean',['wealth_status'])
+            verify_unique('socialtravel_std',['wealth_status'])
+            # Make sure that grocerytravel baseline depends only on wealth status (for this location):
+            verify_unique('grocerytravel_mean',['wealth_status'])
+            verify_unique('grocerytravel_std',['wealth_status'])
     
     @property
     def population_name(self):
@@ -366,7 +372,7 @@ class Metric:
         """
             
             An object that represents a measure derived from population data.
-                The `before` and `after` objects must have`people` and `census` properties.
+                The `before` and `after` objects must have `people` and `census` properties.
                 The metric is calculated with and without perfect information, for comparison.
         
             :param before: A table of people and their characteristics before the change.
@@ -383,9 +389,13 @@ class Metric:
                     high proportion of grocery travel and low propertion of work and social travel.
                     
         """
-        
+
+        # Get tables from objects:
+        before_people = before.people.copy()
+        after_people = after.people.copy()
+
         # Check inputs:
-        assert len(before) == len(after)
+        assert len(before_people) == len(after_people)
         
         valid_methods = ['median_person','average_person','skews_grocery']
         assert method in valid_methods, "{} is not a valid method: {} .".format(
@@ -398,11 +408,11 @@ class Metric:
         # Store inputs:
         self._random_state = random_state
         self._method = method
-        self._before = before.copy()
-        self._after = after.copy()
+        self._before = before
+        self._after = after
         
         # Get/set helper values:
-        N = len(before)
+        N = len(before_people)
         
         if method=="median_person":
             
@@ -448,16 +458,14 @@ class Metric:
             
         # Compute results:
         group_cols = ['population_name','location_name']
-        before = before.copy()
-        after = after.copy()
-        results = pd.concat([before,after],axis=0,sort=False)[group_cols].drop_duplicates()
+        results = pd.concat([before_people,after_people],axis=0,sort=False)[group_cols].drop_duplicates()
         results = results.set_index(group_cols).sort_index()
-        results['actual_before'] = _actual(before).groupby(group_cols,sort=True)['measure'].apply(_measure)
-        results['actual_after'] = _actual(after).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['actual_before'] = _actual(before_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['actual_after'] = _actual(after_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
         results['actual_delta'] = results['actual_after'] - results['actual_before']
         results['actual_change'] = results['actual_delta']/results['actual_before']
-        results['observed_before'] = _observed(before).groupby(group_cols,sort=True)['measure'].apply(_measure)
-        results['observed_after'] = _observed(after).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['observed_before'] = _observed(before_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['observed_after'] = _observed(after_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
         results['observed_delta'] = results['observed_after'] - results['observed_before']
         results['observed_change'] = results['observed_delta']/results['observed_before']
             
@@ -474,7 +482,7 @@ class Metric:
         
     @property
     def results(self):
-        """Results (before,after,delta) for both ground truth and observed measure."""
+        """Results (before_people,after_people,delta) for both ground truth and observed measure."""
         return self._results
     
     def __str__(self):
@@ -543,14 +551,14 @@ class Experiment:
             population = Population(location_attributes,location_profiles,population_name=population_name,random_state=rs1)
             if show_progress: progress_bar.set_description('transformation')
             transformation = Transformation(population,behavior=behavior,random_state=rs2)
-            before = population.people
-            after = transformation.people
             if show_progress: progress_bar.set_description('metric')
-            metric = Metric(before,after,method=method,random_state=rs3)
+            before = population
+            after = transformation
+            metric = Metric(population,transformation,method=method,random_state=rs3)
             # Append results:
             if show_progress: progress_bar.set_description('')
-            self._before.append(before)
-            self._after.append(after)
+            self._before.append(before.people)
+            self._after.append(after.people)
             self._results.append(metric.results)
             if show_progress: progress_bar.update()
         if show_progress: progress_bar.close()

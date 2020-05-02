@@ -1,0 +1,828 @@
+location_id,location_county,location_state,location_name,population,density,employment_rate,wealth_rate
+0500000US21093,Hardin County,Kentucky,"Hardin County, Kentucky",110356,rural,0.61,0.652
+0500000US21151,Madison County,Kentucky,"Madison County, Kentucky",92368,rural,0.635,0.42800000000000005
+0500000US17091,Kankakee County,Illinois,"Kankakee County, Illinois",110024,rural,0.599,0.537
+0500000US17197,Will County,Illinois,"Will County, Illinois",692310,urban,0.6970000000000001,0.5939999999999999
+0500000US01051,Elmore County,Alabama,"Elmore County, Alabama",81887,urban,0.5579999999999999,0.519
+0500000US01055,Etowah County,Alabama,"Etowah County, Alabama",102501,rural,0.564,0.7240000000000001
+0500000US01089,Madison County,Alabama,"Madison County, Alabama",366519,urban,0.633,0.6350000000000001
+0500000US01117,Shelby County,Alabama,"Shelby County, Alabama",215707,urban,0.6409999999999999,0.38
+0500000US06001,Alameda County,California,"Alameda County, California",1666753,urban,0.677,0.5539999999999999
+0500000US06013,Contra Costa County,California,"Contra Costa County, California",1150215,urban,0.6579999999999999,0.685
+0500000US06019,Fresno County,California,"Fresno County, California",994400,urban,0.609,0.562
+0500000US06023,Humboldt County,California,"Humboldt County, California",136373,rural,0.631,0.477
+0500000US06033,Lake County,California,"Lake County, California",64382,rural,,0.5609999999999999
+0500000US06037,Los Angeles County,California,"Los Angeles County, California",10105518,urban,0.65,0.759
+0500000US06047,Merced County,California,"Merced County, California",274765,urban,0.613,0.7040000000000001
+0500000US06057,Nevada County,California,"Nevada County, California",99696,rural,0.5479999999999999,0.52
+0500000US06081,San Mateo County,California,"San Mateo County, California",769545,urban,0.6920000000000001,0.675
+0500000US06085,Santa Clara County,California,"Santa Clara County, California",1937570,urban,0.677,0.512
+0500000US06115,Yuba County,California,"Yuba County, California",78041,rural,0.586,0.451
+0500000US08013,Boulder County,Colorado,"Boulder County, Colorado",326078,urban,0.682,0.46299999999999997
+0500000US08077,Mesa County,Colorado,"Mesa County, Colorado",153207,rural,0.604,0.502
+0500000US09009,New Haven County,Connecticut,"New Haven County, Connecticut",857620,urban,0.649,0.523
+0500000US11001,District of Columbia,District of Columbia,"District of Columbia, District of Columbia",702455,urban,0.7070000000000001,0.49800000000000005
+0500000US12009,Brevard County,Florida,"Brevard County, Florida",596849,urban,0.542,0.518
+0500000US12023,Columbia County,Florida,"Columbia County, Florida",70503,rural,0.528,0.524
+0500000US12055,Highlands County,Florida,"Highlands County, Florida",105424,rural,0.434,0.44799999999999995
+0500000US12073,Leon County,Florida,"Leon County, Florida",292502,urban,0.65,0.5429999999999999
+0500000US12095,Orange County,Florida,"Orange County, Florida",1380645,urban,0.6629999999999999,0.40700000000000003
+0500000US12107,Putnam County,Florida,"Putnam County, Florida",74163,rural,0.467,0.665
+0500000US12127,Volusia County,Florida,"Volusia County, Florida",547538,urban,0.53,0.6
+0500000US12131,Walton County,Florida,"Walton County, Florida",71375,rural,,0.501
+0500000US13121,Fulton County,Georgia,"Fulton County, Georgia",1050114,urban,0.675,0.496
+0500000US15007,Kauai County,Hawaii,"Kauai County, Hawaii",72133,rural,0.645,0.7070000000000001
+0500000US16027,Canyon County,Idaho,"Canyon County, Idaho",223499,urban,0.623,0.569
+0500000US29189,St. Louis County,Missouri,"St. Louis County, Missouri",996945,urban,0.645,0.48
+0500000US30029,Flathead County,Montana,"Flathead County, Montana",102106,rural,0.616,0.676
+0500000US22033,East Baton Rouge Parish,Louisiana,"East Baton Rouge Parish, Louisiana",440956,urban,0.65,0.6
+0500000US22071,Orleans Parish,Louisiana,"Orleans Parish, Louisiana",391006,urban,0.597,0.71
+0500000US24003,Anne Arundel County,Maryland,"Anne Arundel County, Maryland",576031,urban,0.696,0.41300000000000003
+0500000US34003,Bergen County,New Jersey,"Bergen County, New Jersey",936692,urban,0.664,0.45400000000000007
+0500000US34007,Camden County,New Jersey,"Camden County, New Jersey",507078,urban,0.6509999999999999,0.581
+0500000US34013,Essex County,New Jersey,"Essex County, New Jersey",799767,urban,0.665,0.5429999999999999
+0500000US34023,Middlesex County,New Jersey,"Middlesex County, New Jersey",829685,urban,0.65,0.7879999999999999
+0500000US34041,Warren County,New Jersey,"Warren County, New Jersey",105779,urban,0.669,0.3550000000000001
+0500000US36013,Chautauqua County,New York,"Chautauqua County, New York",127939,rural,0.5760000000000001,0.5260000000000001
+0500000US36029,Erie County,New York,"Erie County, New York",919719,urban,0.62,0.65
+0500000US36045,Jefferson County,New York,"Jefferson County, New York",111755,rural,0.631,0.62
+0500000US36047,Kings County,New York,"Kings County, New York",2582830,urban,0.635,0.7020000000000001
+0500000US36053,Madison County,New York,"Madison County, New York",70795,urban,0.609,0.579
+0500000US36065,Oneida County,New York,"Oneida County, New York",229577,urban,0.573,0.485
+0500000US36081,Queens County,New York,"Queens County, New York",2278906,urban,0.643,0.5880000000000001
+0500000US36091,Saratoga County,New York,"Saratoga County, New York",230163,urban,0.679,0.5619999999999999
+0500000US37027,Caldwell County,North Carolina,"Caldwell County, North Carolina",82029,urban,0.595,0.611
+0500000US37049,Craven County,North Carolina,"Craven County, North Carolina",102912,rural,0.5589999999999999,0.45400000000000007
+0500000US37069,Franklin County,North Carolina,"Franklin County, North Carolina",67560,urban,,0.6409999999999999
+0500000US37127,Nash County,North Carolina,"Nash County, North Carolina",94016,rural,0.624,0.764
+0500000US38017,Cass County,North Dakota,"Cass County, North Dakota",181516,rural,0.743,0.671
+0500000US39035,Cuyahoga County,Ohio,"Cuyahoga County, Ohio",1243857,urban,0.632,0.563
+0500000US39043,Erie County,Ohio,"Erie County, Ohio",74615,rural,0.605,0.687
+0500000US48141,El Paso County,Texas,"El Paso County, Texas",840758,urban,0.624,0.507
+0500000US48167,Galveston County,Texas,"Galveston County, Texas",337890,urban,0.653,0.611
+0500000US48213,Henderson County,Texas,"Henderson County, Texas",82299,rural,0.478,0.4810000000000001
+0500000US48245,Jefferson County,Texas,"Jefferson County, Texas",255001,urban,0.547,0.5479999999999999
+0500000US48347,Nacogdoches County,Texas,"Nacogdoches County, Texas",65711,rural,0.545,0.477
+0500000US48361,Orange County,Texas,"Orange County, Texas",83572,urban,0.615,0.752
+0500000US48423,Smith County,Texas,"Smith County, Texas",230221,rural,0.617,0.6829999999999999
+0500000US48471,Walker County,Texas,"Walker County, Texas",72480,rural,,0.748
+0500000US49011,Davis County,Utah,"Davis County, Utah",351713,urban,0.6859999999999999,0.6920000000000001
+0500000US40145,Wagoner County,Oklahoma,"Wagoner County, Oklahoma",80110,urban,0.621,0.545
+0500000US41005,Clackamas County,Oregon,"Clackamas County, Oregon",416075,urban,0.645,0.513
+0500000US41033,Josephine County,Oregon,"Josephine County, Oregon",87393,rural,0.483,0.753
+0500000US41035,Klamath County,Oregon,"Klamath County, Oregon",67653,rural,0.527,0.659
+0500000US41039,Lane County,Oregon,"Lane County, Oregon",379611,urban,0.595,0.47200000000000003
+0500000US41043,Linn County,Oregon,"Linn County, Oregon",127335,rural,0.581,0.679
+0500000US41051,Multnomah County,Oregon,"Multnomah County, Oregon",811880,urban,0.701,0.595
+0500000US42005,Armstrong County,Pennsylvania,"Armstrong County, Pennsylvania",65263,urban,0.5770000000000001,0.4670000000000001
+0500000US42029,Chester County,Pennsylvania,"Chester County, Pennsylvania",522046,urban,0.691,0.43799999999999994
+0500000US42091,Montgomery County,Pennsylvania,"Montgomery County, Pennsylvania",828604,urban,0.6829999999999999,0.55
+0500000US42111,Somerset County,Pennsylvania,"Somerset County, Pennsylvania",73952,rural,0.537,0.6510000000000001
+0500000US45019,Charleston County,South Carolina,"Charleston County, South Carolina",405905,urban,0.6509999999999999,0.48400000000000004
+0500000US45063,Lexington County,South Carolina,"Lexington County, South Carolina",295032,urban,0.6409999999999999,0.48300000000000004
+0500000US45077,Pickens County,South Carolina,"Pickens County, South Carolina",124937,urban,0.581,0.508
+0500000US45091,York County,South Carolina,"York County, South Carolina",274118,urban,0.665,0.609
+0500000US47001,Anderson County,Tennessee,"Anderson County, Tennessee",76482,urban,0.557,0.504
+0500000US47149,Rutherford County,Tennessee,"Rutherford County, Tennessee",324890,urban,0.722,0.5569999999999999
+0500000US25001,Barnstable County,Massachusetts,"Barnstable County, Massachusetts",213413,rural,0.594,0.504
+0500000US25013,Hampden County,Massachusetts,"Hampden County, Massachusetts",470406,urban,0.588,0.425
+0500000US25025,Suffolk County,Massachusetts,"Suffolk County, Massachusetts",807252,urban,0.6890000000000001,0.452
+0500000US26115,Monroe County,Michigan,"Monroe County, Michigan",150439,rural,0.609,0.5710000000000001
+0500000US13313,Whitfield County,Georgia,"Whitfield County, Georgia",104062,rural,0.632,0.517
+0500000US15001,Hawaii County,Hawaii,"Hawaii County, Hawaii",200983,rural,0.59,0.67
+0500000US15009,Maui County,Hawaii,"Maui County, Hawaii",167218,rural,0.66,0.731
+0500000US16083,Twin Falls County,Idaho,"Twin Falls County, Idaho",86081,rural,0.623,0.649
+0500000US17031,Cook County,Illinois,"Cook County, Illinois",5180493,urban,0.6629999999999999,0.7490000000000001
+0500000US49035,Salt Lake County,Utah,"Salt Lake County, Utah",1152633,urban,0.711,0.7719999999999999
+0500000US49049,Utah County,Utah,"Utah County, Utah",622213,urban,0.6890000000000001,0.6
+0500000US51015,Augusta County,Virginia,"Augusta County, Virginia",75457,rural,0.58,0.797
+0500000US51069,Frederick County,Virginia,"Frederick County, Virginia",88355,rural,0.6559999999999999,0.63
+0500000US51085,Hanover County,Virginia,"Hanover County, Virginia",107239,urban,0.66,0.7140000000000001
+0500000US51161,Roanoke County,Virginia,"Roanoke County, Virginia",94073,urban,0.612,0.6190000000000001
+0500000US51177,Spotsylvania County,Virginia,"Spotsylvania County, Virginia",134238,urban,0.682,0.5770000000000001
+0500000US51199,York County,Virginia,"York County, Virginia",67846,urban,0.6629999999999999,0.6349999999999999
+0500000US53005,Benton County,Washington,"Benton County, Washington",201877,urban,0.613,0.536
+0500000US53007,Chelan County,Washington,"Chelan County, Washington",77036,rural,,0.557
+0500000US53009,Clallam County,Washington,"Clallam County, Washington",76737,rural,0.505,0.491
+0500000US53015,Cowlitz County,Washington,"Cowlitz County, Washington",108987,rural,0.5870000000000001,0.66
+0500000US53025,Grant County,Washington,"Grant County, Washington",97331,rural,0.627,0.591
+0500000US06045,Mendocino County,California,"Mendocino County, California",87606,rural,0.584,0.552
+0500000US24033,Prince George's County,Maryland,"Prince George's County, Maryland",909308,urban,0.7170000000000001,0.524
+0500000US24043,Washington County,Maryland,"Washington County, Maryland",150926,urban,0.598,0.551
+0500000US25017,Middlesex County,Massachusetts,"Middlesex County, Massachusetts",1614714,urban,0.6970000000000001,0.8190000000000001
+0500000US26099,Macomb County,Michigan,"Macomb County, Michigan",874759,urban,0.644,0.483
+0500000US26103,Marquette County,Michigan,"Marquette County, Michigan",66516,rural,0.591,0.7490000000000001
+0500000US26147,St. Clair County,Michigan,"St. Clair County, Michigan",159337,urban,0.614,0.615
+0500000US26163,Wayne County,Michigan,"Wayne County, Michigan",1753893,urban,0.591,0.7290000000000001
+0500000US27053,Hennepin County,Minnesota,"Hennepin County, Minnesota",1259428,urban,0.727,0.496
+0500000US27139,Scott County,Minnesota,"Scott County, Minnesota",147381,urban,0.748,0.5499999999999999
+0500000US27163,Washington County,Minnesota,"Washington County, Minnesota",259201,urban,0.7140000000000001,0.7389999999999999
+0500000US28033,DeSoto County,Mississippi,"DeSoto County, Mississippi",182001,urban,0.6940000000000001,0.6459999999999999
+0500000US28075,Lauderdale County,Mississippi,"Lauderdale County, Mississippi",75317,rural,0.547,0.342
+0500000US29031,Cape Girardeau County,Missouri,"Cape Girardeau County, Missouri",78753,rural,0.6629999999999999,0.535
+0500000US17161,Rock Island County,Illinois,"Rock Island County, Illinois",143477,urban,0.627,0.6709999999999999
+0500000US18035,Delaware County,Indiana,"Delaware County, Indiana",114772,rural,0.601,0.565
+0500000US18067,Howard County,Indiana,"Howard County, Indiana",82366,rural,0.602,0.667
+0500000US05007,Benton County,Arkansas,"Benton County, Arkansas",272608,urban,0.6729999999999999,0.562
+0500000US05045,Faulkner County,Arkansas,"Faulkner County, Arkansas",124806,urban,0.612,0.24100000000000002
+0500000US13051,Chatham County,Georgia,"Chatham County, Georgia",289195,urban,0.66,0.214
+0500000US13077,Coweta County,Georgia,"Coweta County, Georgia",145864,urban,0.633,0.483
+0500000US13139,Hall County,Georgia,"Hall County, Georgia",202148,rural,0.633,0.5830000000000001
+0500000US13157,Jackson County,Georgia,"Jackson County, Georgia",70422,rural,0.652,0.6629999999999999
+0500000US13185,Lowndes County,Georgia,"Lowndes County, Georgia",116321,rural,0.563,0.6679999999999999
+0500000US13217,Newton County,Georgia,"Newton County, Georgia",109541,urban,0.614,0.541
+0500000US13245,Richmond County,Georgia,"Richmond County, Georgia",201554,urban,0.612,0.5619999999999999
+0500000US23031,York County,Maine,"York County, Maine",206229,urban,0.66,0.53
+0500000US24001,Allegany County,Maryland,"Allegany County, Maryland",70975,rural,0.539,0.7170000000000001
+0500000US24005,Baltimore County,Maryland,"Baltimore County, Maryland",828431,urban,0.659,0.508
+0500000US24017,Charles County,Maryland,"Charles County, Maryland",161503,urban,0.672,0.617
+0500000US24021,Frederick County,Maryland,"Frederick County, Maryland",255648,urban,0.691,0.82
+0500000US24031,Montgomery County,Maryland,"Montgomery County, Maryland",1052567,urban,0.7170000000000001,0.787
+0500000US24045,Wicomico County,Maryland,"Wicomico County, Maryland",103195,urban,0.619,0.672
+0500000US29183,St. Charles County,Missouri,"St. Charles County, Missouri",399182,urban,0.6859999999999999,0.498
+0500000US30013,Cascade County,Montana,"Cascade County, Montana",81643,rural,0.621,0.447
+0500000US30031,Gallatin County,Montana,"Gallatin County, Montana",111876,rural,0.726,0.589
+0500000US30049,Lewis and Clark County,Montana,"Lewis and Clark County, Montana",68700,rural,0.6679999999999999,0.68
+0500000US32003,Clark County,Nevada,"Clark County, Nevada",2231647,urban,0.639,0.5730000000000001
+0500000US33015,Rockingham County,New Hampshire,"Rockingham County, New Hampshire",309176,urban,0.695,0.606
+0500000US33017,Strafford County,New Hampshire,"Strafford County, New Hampshire",130090,urban,0.675,0.534
+0500000US34001,Atlantic County,New Jersey,"Atlantic County, New Jersey",265429,urban,0.649,0.43099999999999994
+0500000US34005,Burlington County,New Jersey,"Burlington County, New Jersey",445384,urban,0.659,0.49
+0500000US34015,Gloucester County,New Jersey,"Gloucester County, New Jersey",291408,urban,0.6629999999999999,0.518
+0500000US34019,Hunterdon County,New Jersey,"Hunterdon County, New Jersey",124714,urban,0.6459999999999999,0.655
+0500000US34021,Mercer County,New Jersey,"Mercer County, New Jersey",369811,urban,0.657,0.7440000000000001
+0500000US34025,Monmouth County,New Jersey,"Monmouth County, New Jersey",621354,urban,0.664,0.47600000000000003
+0500000US34029,Ocean County,New Jersey,"Ocean County, New Jersey",601651,urban,0.585,0.705
+0500000US34035,Somerset County,New Jersey,"Somerset County, New Jersey",331164,urban,0.679,0.6730000000000002
+0500000US22045,Iberia Parish,Louisiana,"Iberia Parish, Louisiana",70941,urban,0.609,0.7170000000000001
+0500000US22055,Lafayette Parish,Louisiana,"Lafayette Parish, Louisiana",242782,urban,0.6459999999999999,0.4850000000000001
+0500000US06055,Napa County,California,"Napa County, California",139417,rural,0.64,0.572
+0500000US06059,Orange County,California,"Orange County, California",3185968,urban,0.655,0.6109999999999999
+0500000US06073,San Diego County,California,"San Diego County, California",3343364,urban,0.659,0.625
+0500000US06079,San Luis Obispo County,California,"San Luis Obispo County, California",284010,urban,0.568,0.506
+0500000US06083,Santa Barbara County,California,"Santa Barbara County, California",446527,urban,0.63,0.786
+0500000US06097,Sonoma County,California,"Sonoma County, California",499942,urban,0.66,0.6199999999999999
+0500000US06101,Sutter County,California,"Sutter County, California",96807,rural,0.598,0.45899999999999996
+0500000US06107,Tulare County,California,"Tulare County, California",465861,urban,0.6,0.54
+0500000US06113,Yolo County,California,"Yolo County, California",220408,urban,0.586,0.511
+0500000US08031,Denver County,Colorado,"Denver County, Colorado",716492,urban,0.737,0.40700000000000003
+0500000US01049,DeKalb County,Alabama,"DeKalb County, Alabama",71385,rural,0.535,0.597
+0500000US01095,Marshall County,Alabama,"Marshall County, Alabama",96109,rural,0.569,0.542
+0500000US01101,Montgomery County,Alabama,"Montgomery County, Alabama",225763,urban,0.589,0.5169999999999999
+0500000US01115,St. Clair County,Alabama,"St. Clair County, Alabama",88690,urban,0.569,0.4210000000000001
+0500000US02090,Fairbanks North Star Borough,Alaska,"Fairbanks North Star Borough, Alaska",98971,rural,0.715,0.498
+0500000US04005,Coconino County,Arizona,"Coconino County, Arizona",142854,rural,0.616,0.556
+0500000US04013,Maricopa County,Arizona,"Maricopa County, Arizona",4410824,urban,0.6459999999999999,0.7560000000000001
+0500000US54039,Kanawha County,West Virginia,"Kanawha County, West Virginia",180454,rural,0.537,0.679
+0500000US54107,Wood County,West Virginia,"Wood County, West Virginia",84203,rural,0.5529999999999999,0.772
+0500000US12086,Miami-Dade County,Florida,"Miami-Dade County, Florida",2761581,urban,0.636,0.578
+0500000US12097,Osceola County,Florida,"Osceola County, Florida",367990,urban,0.6459999999999999,0.58
+0500000US13021,Bibb County,Georgia,"Bibb County, Georgia",153095,rural,0.5820000000000001,0.5389999999999999
+0500000US40027,Cleveland County,Oklahoma,"Cleveland County, Oklahoma",281669,urban,0.657,0.6890000000000001
+0500000US40125,Pottawatomie County,Oklahoma,"Pottawatomie County, Oklahoma",72679,rural,0.544,0.507
+0500000US40143,Tulsa County,Oklahoma,"Tulsa County, Oklahoma",648360,urban,0.657,0.7219999999999999
+0500000US27013,Blue Earth County,Minnesota,"Blue Earth County, Minnesota",67427,rural,0.7140000000000001,0.674
+0500000US27171,Wright County,Minnesota,"Wright County, Minnesota",136349,urban,0.738,0.643
+0500000US28121,Rankin County,Mississippi,"Rankin County, Mississippi",153902,urban,0.645,0.5100000000000001
+0500000US35045,San Juan County,New Mexico,"San Juan County, New Mexico",125043,rural,0.527,0.59
+0500000US36103,Suffolk County,New York,"Suffolk County, New York",1481093,urban,0.644,0.648
+0500000US36105,Sullivan County,New York,"Sullivan County, New York",75498,rural,0.556,0.7360000000000001
+0500000US36119,Westchester County,New York,"Westchester County, New York",967612,urban,0.654,0.512
+0500000US37023,Burke County,North Carolina,"Burke County, North Carolina",90382,urban,0.586,0.48200000000000004
+0500000US37037,Chatham County,North Carolina,"Chatham County, North Carolina",73139,urban,,0.6140000000000001
+0500000US37057,Davidson County,North Carolina,"Davidson County, North Carolina",166614,urban,0.591,0.48700000000000004
+0500000US37085,Harnett County,North Carolina,"Harnett County, North Carolina",134214,rural,0.5770000000000001,0.499
+0500000US37089,Henderson County,North Carolina,"Henderson County, North Carolina",116748,urban,0.584,0.5599999999999999
+0500000US42133,York County,Pennsylvania,"York County, Pennsylvania",448273,urban,0.649,0.5099999999999999
+0500000US48453,Travis County,Texas,"Travis County, Texas",1248743,urban,0.728,0.674
+0500000US48479,Webb County,Texas,"Webb County, Texas",275910,urban,0.597,0.45500000000000007
+0500000US49045,Tooele County,Utah,"Tooele County, Utah",69907,urban,,0.5349999999999999
+0500000US51019,Bedford County,Virginia,"Bedford County, Virginia",78747,urban,0.588,0.586
+0500000US51041,Chesterfield County,Virginia,"Chesterfield County, Virginia",348556,urban,0.669,0.38300000000000006
+0500000US51095,James City County,Virginia,"James City County, Virginia",76397,urban,0.578,0.49700000000000005
+0500000US51107,Loudoun County,Virginia,"Loudoun County, Virginia",406850,urban,0.7490000000000001,0.486
+0500000US51165,Rockingham County,Virginia,"Rockingham County, Virginia",81244,rural,0.624,0.489
+0500000US51179,Stafford County,Virginia,"Stafford County, Virginia",149960,urban,0.715,0.559
+0500000US53053,Pierce County,Washington,"Pierce County, Washington",891299,urban,0.654,0.786
+0500000US53061,Snohomish County,Washington,"Snohomish County, Washington",814901,urban,0.6759999999999999,0.24200000000000002
+0500000US53073,Whatcom County,Washington,"Whatcom County, Washington",225685,rural,0.605,0.486
+0500000US54033,Harrison County,West Virginia,"Harrison County, West Virginia",67554,rural,0.565,0.6779999999999999
+0500000US54081,Raleigh County,West Virginia,"Raleigh County, West Virginia",74254,rural,0.491,0.638
+0500000US37133,Onslow County,North Carolina,"Onslow County, North Carolina",197683,rural,0.72,0.662
+0500000US37161,Rutherford County,North Carolina,"Rutherford County, North Carolina",66826,rural,0.556,0.436
+0500000US22079,Rapides Parish,Louisiana,"Rapides Parish, Louisiana",130562,rural,0.5720000000000001,0.733
+0500000US22097,St. Landry Parish,Louisiana,"St. Landry Parish, Louisiana",82764,rural,0.518,0.7440000000000001
+0500000US09001,Fairfield County,Connecticut,"Fairfield County, Connecticut",943823,urban,0.675,0.613
+0500000US09007,Middlesex County,Connecticut,"Middlesex County, Connecticut",162682,urban,0.687,0.634
+0500000US09011,New London County,Connecticut,"New London County, Connecticut",266784,urban,0.66,0.5259999999999999
+0500000US10005,Sussex County,Delaware,"Sussex County, Delaware",229286,urban,0.5529999999999999,0.7010000000000001
+0500000US12033,Escambia County,Florida,"Escambia County, Florida",315534,urban,0.597,0.681
+0500000US12053,Hernando County,Florida,"Hernando County, Florida",190865,urban,0.46799999999999997,0.6410000000000001
+0500000US12071,Lee County,Florida,"Lee County, Florida",754610,urban,0.529,0.6489999999999999
+0500000US19113,Linn County,Iowa,"Linn County, Iowa",225909,urban,0.693,0.6679999999999999
+0500000US21029,Bullitt County,Kentucky,"Bullitt County, Kentucky",81069,urban,0.638,0.625
+0500000US41017,Deschutes County,Oregon,"Deschutes County, Oregon",191996,rural,0.628,0.5750000000000001
+0500000US41019,Douglas County,Oregon,"Douglas County, Oregon",110283,rural,0.516,0.551
+0500000US42003,Allegheny County,Pennsylvania,"Allegheny County, Pennsylvania",1218452,urban,0.65,0.537
+0500000US42027,Centre County,Pennsylvania,"Centre County, Pennsylvania",162805,rural,0.568,0.634
+0500000US42033,Clearfield County,Pennsylvania,"Clearfield County, Pennsylvania",79388,rural,0.5429999999999999,0.655
+0500000US42041,Cumberland County,Pennsylvania,"Cumberland County, Pennsylvania",251423,urban,0.6609999999999999,0.561
+0500000US42045,Delaware County,Pennsylvania,"Delaware County, Pennsylvania",564751,urban,0.647,0.49000000000000005
+0500000US42051,Fayette County,Pennsylvania,"Fayette County, Pennsylvania",130441,urban,0.565,0.5840000000000001
+0500000US42071,Lancaster County,Pennsylvania,"Lancaster County, Pennsylvania",543557,urban,0.6559999999999999,0.5569999999999999
+0500000US42089,Monroe County,Pennsylvania,"Monroe County, Pennsylvania",169507,rural,0.602,0.414
+0500000US42095,Northampton County,Pennsylvania,"Northampton County, Pennsylvania",304807,urban,0.619,0.12200000000000001
+0500000US51087,Henrico County,Virginia,"Henrico County, Virginia",329261,urban,0.688,0.529
+0500000US53077,Yakima County,Washington,"Yakima County, Washington",251446,rural,0.607,0.61
+0500000US45047,Greenwood County,South Carolina,"Greenwood County, South Carolina",70741,rural,0.588,0.5509999999999999
+0500000US01043,Cullman County,Alabama,"Cullman County, Alabama",83442,rural,0.562,0.506
+0500000US06039,Madera County,California,"Madera County, California",157672,rural,0.56,0.5249999999999999
+0500000US12069,Lake County,Florida,"Lake County, Florida",356495,urban,0.52,0.8
+0500000US22017,Caddo Parish,Louisiana,"Caddo Parish, Louisiana",242922,urban,0.584,0.508
+0500000US29019,Boone County,Missouri,"Boone County, Missouri",180005,rural,0.674,0.575
+0500000US39061,Hamilton County,Ohio,"Hamilton County, Ohio",816684,urban,0.67,0.6260000000000001
+0500000US39095,Lucas County,Ohio,"Lucas County, Ohio",429899,urban,0.619,0.6559999999999999
+0500000US45055,Kershaw County,South Carolina,"Kershaw County, South Carolina",65592,urban,0.584,0.63
+0500000US45059,Laurens County,South Carolina,"Laurens County, South Carolina",66994,urban,0.5529999999999999,0.491
+0500000US45073,Oconee County,South Carolina,"Oconee County, South Carolina",78374,rural,0.49200000000000005,0.4690000000000001
+0500000US45083,Spartanburg County,South Carolina,"Spartanburg County, South Carolina",313888,urban,0.617,0.649
+0500000US06095,Solano County,California,"Solano County, California",446610,urban,0.642,0.671
+0500000US08035,Douglas County,Colorado,"Douglas County, Colorado",342776,urban,0.731,0.418
+0500000US10003,New Castle County,Delaware,"New Castle County, Delaware",559335,urban,0.654,0.6629999999999999
+0500000US12113,Santa Rosa County,Florida,"Santa Rosa County, Florida",179349,urban,0.5920000000000001,0.446
+0500000US13135,Gwinnett County,Georgia,"Gwinnett County, Georgia",927781,urban,0.6890000000000001,0.759
+0500000US47155,Sevier County,Tennessee,"Sevier County, Tennessee",97892,rural,0.579,0.449
+0500000US47157,Shelby County,Tennessee,"Shelby County, Tennessee",935764,urban,0.642,0.598
+0500000US47165,Sumner County,Tennessee,"Sumner County, Tennessee",187149,urban,0.653,0.6559999999999999
+0500000US47189,Wilson County,Tennessee,"Wilson County, Tennessee",140625,urban,0.664,0.732
+0500000US48005,Angelina County,Texas,"Angelina County, Texas",87092,rural,0.555,0.36699999999999994
+0500000US48029,Bexar County,Texas,"Bexar County, Texas",1986049,urban,0.6459999999999999,0.6890000000000001
+0500000US48037,Bowie County,Texas,"Bowie County, Texas",94324,rural,0.529,0.5569999999999999
+0500000US48091,Comal County,Texas,"Comal County, Texas",148373,urban,0.557,0.43699999999999994
+0500000US48187,Guadalupe County,Texas,"Guadalupe County, Texas",163694,urban,0.64,0.737
+0500000US48215,Hidalgo County,Texas,"Hidalgo County, Texas",865939,urban,0.5870000000000001,0.529
+0500000US48339,Montgomery County,Texas,"Montgomery County, Texas",590925,urban,0.652,0.578
+0500000US47037,Davidson County,Tennessee,"Davidson County, Tennessee",692587,urban,0.7190000000000001,0.48
+0500000US47065,Hamilton County,Tennessee,"Hamilton County, Tennessee",364286,urban,0.635,0.566
+0500000US04001,Apache County,Arizona,"Apache County, Arizona",71818,rural,0.36,0.615
+0500000US42049,Erie County,Pennsylvania,"Erie County, Pennsylvania",272061,urban,0.612,0.589
+0500000US42101,Philadelphia County,Pennsylvania,"Philadelphia County, Pennsylvania",1584138,urban,0.611,0.45299999999999996
+0500000US45057,Lancaster County,South Carolina,"Lancaster County, South Carolina",95380,urban,0.58,0.547
+0500000US47163,Sullivan County,Tennessee,"Sullivan County, Tennessee",157668,urban,0.522,0.601
+0500000US48135,Ector County,Texas,"Ector County, Texas",162124,rural,0.675,0.596
+0500000US48203,Harrison County,Texas,"Harrison County, Texas",66726,rural,0.5870000000000001,0.591
+0500000US48409,San Patricio County,Texas,"San Patricio County, Texas",66893,urban,0.581,0.638
+0500000US53011,Clark County,Washington,"Clark County, Washington",481857,urban,0.65,0.467
+0500000US53045,Mason County,Washington,"Mason County, Washington",65507,rural,0.522,0.48300000000000004
+0500000US23003,Aroostook County,Maine,"Aroostook County, Maine",67111,rural,0.537,0.59
+0500000US37125,Moore County,North Carolina,"Moore County, North Carolina",98682,rural,0.5770000000000001,0.691
+0500000US22005,Ascension Parish,Louisiana,"Ascension Parish, Louisiana",124672,urban,0.693,0.4160000000000001
+0500000US22015,Bossier Parish,Louisiana,"Bossier Parish, Louisiana",127185,urban,0.642,0.38599999999999995
+0500000US22109,Terrebonne Parish,Louisiana,"Terrebonne Parish, Louisiana",111021,rural,0.5770000000000001,0.5489999999999999
+0500000US26055,Grand Traverse County,Michigan,"Grand Traverse County, Michigan",92573,rural,0.648,0.37799999999999995
+0500000US29095,Jackson County,Missouri,"Jackson County, Missouri",700307,urban,0.665,0.597
+0500000US36059,Nassau County,New York,"Nassau County, New York",1358343,urban,0.6509999999999999,0.46199999999999997
+0500000US42043,Dauphin County,Pennsylvania,"Dauphin County, Pennsylvania",277097,urban,0.662,0.6689999999999999
+0500000US42097,Northumberland County,Pennsylvania,"Northumberland County, Pennsylvania",91083,rural,0.5870000000000001,0.603
+0500000US45015,Berkeley County,South Carolina,"Berkeley County, South Carolina",221091,urban,0.649,0.5349999999999999
+0500000US47009,Blount County,Tennessee,"Blount County, Tennessee",131349,urban,0.595,0.72
+0500000US48157,Fort Bend County,Texas,"Fort Bend County, Texas",787858,urban,0.677,0.644
+0500000US12057,Hillsborough County,Florida,"Hillsborough County, Florida",1436888,urban,0.6459999999999999,0.43200000000000005
+0500000US12089,Nassau County,Florida,"Nassau County, Florida",85832,urban,0.5920000000000001,0.47800000000000004
+0500000US22105,Tangipahoa Parish,Louisiana,"Tangipahoa Parish, Louisiana",133777,rural,0.586,0.6399999999999999
+0500000US53027,Grays Harbor County,Washington,"Grays Harbor County, Washington",73901,rural,0.45,0.48699999999999993
+0500000US05119,Pulaski County,Arkansas,"Pulaski County, Arkansas",392680,urban,0.639,0.534
+0500000US02170,Matanuska-Susitna Borough,Alaska,"Matanuska-Susitna Borough, Alaska",107610,urban,0.573,0.517
+0500000US25005,Bristol County,Massachusetts,"Bristol County, Massachusetts",564022,urban,0.649,0.8640000000000001
+0500000US10001,Kent County,Delaware,"Kent County, Delaware",178550,rural,0.609,0.27699999999999997
+0500000US28089,Madison County,Mississippi,"Madison County, Mississippi",105630,urban,0.691,0.5489999999999999
+0500000US34027,Morris County,New Jersey,"Morris County, New Jersey",494228,urban,0.675,0.624
+0500000US36075,Oswego County,New York,"Oswego County, New York",117898,urban,0.61,0.391
+0500000US37021,Buncombe County,North Carolina,"Buncombe County, North Carolina",259103,urban,0.632,0.43700000000000006
+0500000US37193,Wilkes County,North Carolina,"Wilkes County, North Carolina",68557,rural,0.585,0.6629999999999999
+0500000US41047,Marion County,Oregon,"Marion County, Oregon",346868,urban,0.617,0.77
+0500000US34031,Passaic County,New Jersey,"Passaic County, New Jersey",503310,urban,0.65,0.622
+0500000US36009,Cattaraugus County,New York,"Cattaraugus County, New York",76840,rural,0.584,0.5539999999999999
+0500000US36061,New York County,New York,"New York County, New York",1628701,urban,0.669,0.41700000000000004
+0500000US36071,Orange County,New York,"Orange County, New York",381951,urban,0.6409999999999999,0.607
+0500000US37101,Johnston County,North Carolina,"Johnston County, North Carolina",202675,urban,0.6579999999999999,0.5419999999999999
+0500000US37159,Rowan County,North Carolina,"Rowan County, North Carolina",141262,urban,0.612,0.624
+0500000US37183,Wake County,North Carolina,"Wake County, North Carolina",1092305,urban,0.706,0.752
+0500000US44009,Washington County,Rhode Island,"Washington County, Rhode Island",126179,urban,0.647,0.596
+0500000US45003,Aiken County,South Carolina,"Aiken County, South Carolina",169401,urban,0.58,0.445
+0500000US45007,Anderson County,South Carolina,"Anderson County, South Carolina",200482,urban,0.611,0.6619999999999999
+0500000US45035,Dorchester County,South Carolina,"Dorchester County, South Carolina",160647,urban,0.6729999999999999,0.5820000000000001
+0500000US45041,Florence County,South Carolina,"Florence County, South Carolina",138159,rural,0.595,0.5939999999999999
+0500000US45045,Greenville County,South Carolina,"Greenville County, South Carolina",514213,urban,0.65,0.59
+0500000US45051,Horry County,South Carolina,"Horry County, South Carolina",344147,urban,0.5489999999999999,0.645
+0500000US37051,Cumberland County,North Carolina,"Cumberland County, North Carolina",332330,urban,0.636,0.589
+0500000US06053,Monterey County,California,"Monterey County, California",435594,urban,0.613,0.65
+0500000US06099,Stanislaus County,California,"Stanislaus County, California",549815,urban,0.601,0.581
+0500000US12105,Polk County,Florida,"Polk County, Florida",708009,urban,0.562,0.617
+0500000US53033,King County,Washington,"King County, Washington",2233163,urban,0.7040000000000001,0.582
+0500000US53057,Skagit County,Washington,"Skagit County, Washington",128206,rural,0.605,0.4310000000000001
+0500000US01015,Calhoun County,Alabama,"Calhoun County, Alabama",114277,rural,0.579,0.591
+0500000US22057,Lafourche Parish,Louisiana,"Lafourche Parish, Louisiana",98115,rural,0.595,0.47300000000000003
+0500000US48041,Brazos County,Texas,"Brazos County, Texas",226758,rural,0.584,0.5909999999999999
+0500000US49005,Cache County,Utah,"Cache County, Utah",127068,rural,0.7,0.624
+0500000US05085,Lonoke County,Arkansas,"Lonoke County, Arkansas",73657,urban,0.601,0.555
+0500000US06089,Shasta County,California,"Shasta County, California",180040,rural,0.524,0.616
+0500000US08005,Arapahoe County,Colorado,"Arapahoe County, Colorado",651215,urban,0.715,0.5489999999999999
+0500000US01073,Jefferson County,Alabama,"Jefferson County, Alabama",659300,urban,0.607,0.644
+0500000US27137,St. Louis County,Minnesota,"St. Louis County, Minnesota",199754,urban,0.62,0.627
+0500000US34009,Cape May County,New Jersey,"Cape May County, New Jersey",92560,rural,0.5760000000000001,0.49199999999999994
+0500000US37019,Brunswick County,North Carolina,"Brunswick County, North Carolina",136744,urban,0.49,0.755
+0500000US37147,Pitt County,North Carolina,"Pitt County, North Carolina",179914,rural,0.64,0.5439999999999999
+0500000US05145,White County,Arkansas,"White County, Arkansas",78727,rural,0.53,0.6960000000000001
+0500000US47119,Maury County,Tennessee,"Maury County, Tennessee",94340,urban,,0.826
+0500000US47147,Robertson County,Tennessee,"Robertson County, Tennessee",71012,urban,0.6629999999999999,0.77
+0500000US48469,Victoria County,Texas,"Victoria County, Texas",92035,rural,0.602,0.523
+0500000US49057,Weber County,Utah,"Weber County, Utah",256359,urban,0.6859999999999999,0.244
+0500000US51003,Albemarle County,Virginia,"Albemarle County, Virginia",108718,rural,0.601,0.599
+0500000US51059,Fairfax County,Virginia,"Fairfax County, Virginia",1150795,urban,0.7170000000000001,0.691
+0500000US51121,Montgomery County,Virginia,"Montgomery County, Virginia",98985,rural,0.496,0.585
+0500000US53067,Thurston County,Washington,"Thurston County, Washington",286419,urban,0.615,0.718
+0500000US41003,Benton County,Oregon,"Benton County, Oregon",92101,rural,0.605,0.5479999999999999
+0500000US42055,Franklin County,Pennsylvania,"Franklin County, Pennsylvania",154835,rural,0.644,0.6180000000000001
+0500000US44007,Providence County,Rhode Island,"Providence County, Rhode Island",636084,urban,0.634,0.528
+0500000US13215,Muscogee County,Georgia,"Muscogee County, Georgia",194160,urban,0.593,0.502
+0500000US24015,Cecil County,Maryland,"Cecil County, Maryland",102826,urban,0.664,0.446
+0500000US18053,Grant County,Indiana,"Grant County, Indiana",65936,rural,0.575,0.5930000000000001
+0500000US21067,Fayette County,Kentucky,"Fayette County, Kentucky",323780,urban,0.691,0.4749999999999999
+0500000US22103,St. Tammany Parish,Louisiana,"St. Tammany Parish, Louisiana",258111,urban,0.618,0.45699999999999996
+0500000US08069,Larimer County,Colorado,"Larimer County, Colorado",350518,urban,0.674,0.498
+0500000US32031,Washoe County,Nevada,"Washoe County, Nevada",465735,urban,0.669,0.735
+0500000US19163,Scott County,Iowa,"Scott County, Iowa",173283,urban,0.675,0.606
+0500000US22063,Livingston Parish,Louisiana,"Livingston Parish, Louisiana",139567,urban,0.61,0.526
+0500000US13031,Bulloch County,Georgia,"Bulloch County, Georgia",77296,rural,0.588,0.48
+0500000US40101,Muskogee County,Oklahoma,"Muskogee County, Oklahoma",68362,rural,0.556,0.5609999999999999
+0500000US27145,Stearns County,Minnesota,"Stearns County, Minnesota",159256,rural,0.7040000000000001,0.48
+0500000US28049,Hinds County,Mississippi,"Hinds County, Mississippi",237085,urban,0.616,0.444
+0500000US34033,Salem County,New Jersey,"Salem County, New Jersey",62607,urban,0.599,0.565
+0500000US36113,Warren County,New York,"Warren County, New York",64265,rural,0.603,0.669
+0500000US37031,Carteret County,North Carolina,"Carteret County, North Carolina",69524,rural,0.545,0.43200000000000005
+0500000US38035,Grand Forks County,North Dakota,"Grand Forks County, North Dakota",70770,rural,0.7190000000000001,0.5690000000000001
+0500000US39055,Geauga County,Ohio,"Geauga County, Ohio",94031,urban,0.647,0.57
+0500000US47093,Knox County,Tennessee,"Knox County, Tennessee",465289,urban,0.645,0.447
+0500000US48061,Cameron County,Texas,"Cameron County, Texas",423908,urban,0.5539999999999999,0.623
+0500000US01103,Morgan County,Alabama,"Morgan County, Alabama",119089,rural,0.5820000000000001,0.706
+0500000US53021,Franklin County,Washington,"Franklin County, Washington",94347,urban,0.664,0.7390000000000001
+0500000US05069,Jefferson County,Arkansas,"Jefferson County, Arkansas",68114,rural,0.47200000000000003,0.5920000000000001
+0500000US06041,Marin County,California,"Marin County, California",259666,urban,0.645,0.43400000000000005
+0500000US06077,San Joaquin County,California,"San Joaquin County, California",752660,urban,0.609,0.42199999999999993
+0500000US08001,Adams County,Colorado,"Adams County, Colorado",511868,urban,0.7240000000000001,0.5770000000000001
+0500000US01097,Mobile County,Alabama,"Mobile County, Alabama",413757,urban,0.555,0.596
+0500000US54003,Berkeley County,West Virginia,"Berkeley County, West Virginia",117123,urban,0.647,0.391
+0500000US42017,Bucks County,Pennsylvania,"Bucks County, Pennsylvania",628195,urban,0.68,0.583
+0500000US02020,Anchorage Municipality,Alaska,"Anchorage Municipality, Alaska",291538,urban,0.7090000000000001,0.523
+0500000US04021,Pinal County,Arizona,"Pinal County, Arizona",447138,urban,0.493,0.537
+0500000US13113,Fayette County,Georgia,"Fayette County, Georgia",113459,urban,0.613,0.65
+0500000US13151,Henry County,Georgia,"Henry County, Georgia",230220,urban,0.6859999999999999,0.578
+0500000US24027,Howard County,Maryland,"Howard County, Maryland",323196,urban,0.7090000000000001,0.5710000000000001
+0500000US09005,Litchfield County,Connecticut,"Litchfield County, Connecticut",181111,rural,0.657,0.531
+0500000US09013,Tolland County,Connecticut,"Tolland County, Connecticut",150921,urban,0.627,0.601
+0500000US12115,Sarasota County,Florida,"Sarasota County, Florida",426718,urban,0.493,0.523
+0500000US08059,Jefferson County,Colorado,"Jefferson County, Colorado",580233,urban,0.6970000000000001,0.501
+0500000US08101,Pueblo County,Colorado,"Pueblo County, Colorado",167529,rural,0.561,0.711
+0500000US13063,Clayton County,Georgia,"Clayton County, Georgia",289615,urban,0.66,0.5780000000000001
+0500000US06031,Kings County,California,"Kings County, California",151366,rural,0.532,0.529
+0500000US06075,San Francisco County,California,"San Francisco County, California",883305,urban,0.718,0.469
+0500000US12035,Flagler County,Florida,"Flagler County, Florida",112067,urban,0.495,0.728
+0500000US12087,Monroe County,Florida,"Monroe County, Florida",75027,rural,0.632,0.6150000000000001
+0500000US12109,St. Johns County,Florida,"St. Johns County, Florida",254261,urban,0.594,0.605
+0500000US12111,St. Lucie County,Florida,"St. Lucie County, Florida",321128,urban,0.5379999999999999,0.49
+0500000US06025,Imperial County,California,"Imperial County, California",181827,rural,0.522,0.731
+0500000US06061,Placer County,California,"Placer County, California",393149,urban,0.5920000000000001,0.68
+0500000US13117,Forsyth County,Georgia,"Forsyth County, Georgia",236612,urban,0.6920000000000001,0.5269999999999999
+0500000US17183,Vermilion County,Illinois,"Vermilion County, Illinois",76806,rural,0.545,0.557
+0500000US13059,Clarke County,Georgia,"Clarke County, Georgia",127330,rural,0.5870000000000001,0.636
+0500000US17097,Lake County,Illinois,"Lake County, Illinois",700832,urban,0.6809999999999999,0.604
+0500000US13295,Walker County,Georgia,"Walker County, Georgia",69410,urban,0.5670000000000001,0.458
+0500000US15003,Honolulu County,Hawaii,"Honolulu County, Hawaii",980080,urban,0.67,0.6579999999999999
+0500000US18003,Allen County,Indiana,"Allen County, Indiana",375351,urban,0.67,0.498
+0500000US17115,Macon County,Illinois,"Macon County, Illinois",104712,rural,0.614,0.6060000000000001
+0500000US18085,Kosciusko County,Indiana,"Kosciusko County, Indiana",79344,rural,0.7,0.56
+0500000US18091,LaPorte County,Indiana,"LaPorte County, Indiana",110007,rural,0.568,0.428
+0500000US18109,Morgan County,Indiana,"Morgan County, Indiana",70116,urban,0.644,0.5670000000000001
+0500000US16019,Bonneville County,Idaho,"Bonneville County, Idaho",116854,rural,0.619,0.407
+0500000US18095,Madison County,Indiana,"Madison County, Indiana",129641,urban,0.5710000000000001,0.72
+0500000US18097,Marion County,Indiana,"Marion County, Indiana",954670,urban,0.669,0.477
+0500000US19103,Johnson County,Iowa,"Johnson County, Iowa",151260,rural,0.7040000000000001,0.45899999999999996
+0500000US20091,Johnson County,Kansas,"Johnson County, Kansas",597555,urban,0.715,0.488
+0500000US19049,Dallas County,Iowa,"Dallas County, Iowa",90180,urban,0.754,0.311
+0500000US18157,Tippecanoe County,Indiana,"Tippecanoe County, Indiana",193048,rural,0.636,0.461
+0500000US19169,Story County,Iowa,"Story County, Iowa",98105,rural,0.6579999999999999,0.611
+0500000US20015,Butler County,Kansas,"Butler County, Kansas",66765,urban,0.615,0.5940000000000001
+0500000US48309,McLennan County,Texas,"McLennan County, Texas",254607,urban,0.603,0.40199999999999997
+0500000US48355,Nueces County,Texas,"Nueces County, Texas",362265,urban,0.622,0.795
+0500000US51740,Portsmouth city,Virginia,"Portsmouth city, Virginia",94632,urban,0.624,0.649
+0500000US18177,Wayne County,Indiana,"Wayne County, Indiana",65936,rural,0.584,0.716
+0500000US51810,Virginia Beach city,Virginia,"Virginia Beach city, Virginia",450189,urban,0.696,0.55
+0500000US54011,Cabell County,West Virginia,"Cabell County, West Virginia",93224,urban,0.523,0.603
+0500000US23011,Kennebec County,Maine,"Kennebec County, Maine",122083,rural,0.623,0.594
+0500000US24025,Harford County,Maryland,"Harford County, Maryland",253956,urban,0.674,0.664
+0500000US25009,Essex County,Massachusetts,"Essex County, Massachusetts",790638,urban,0.677,0.625
+0500000US38101,Ward County,North Dakota,"Ward County, North Dakota",67744,rural,0.7120000000000001,0.731
+0500000US25003,Berkshire County,Massachusetts,"Berkshire County, Massachusetts",126348,rural,0.605,0.611
+0500000US25011,Franklin County,Massachusetts,"Franklin County, Massachusetts",70963,rural,0.6459999999999999,0.42599999999999993
+0500000US25021,Norfolk County,Massachusetts,"Norfolk County, Massachusetts",705388,urban,0.688,0.528
+0500000US26159,Van Buren County,Michigan,"Van Buren County, Michigan",75448,urban,0.617,0.491
+0500000US42073,Lawrence County,Pennsylvania,"Lawrence County, Pennsylvania",86184,rural,0.594,0.7390000000000001
+0500000US48441,Taylor County,Texas,"Taylor County, Texas",137640,rural,0.642,0.5870000000000001
+0500000US48451,Tom Green County,Texas,"Tom Green County, Texas",118189,rural,0.647,0.629
+0500000US47125,Montgomery County,Tennessee,"Montgomery County, Tennessee",205950,urban,0.6459999999999999,0.8170000000000001
+0500000US51153,Prince William County,Virginia,"Prince William County, Virginia",468011,urban,0.732,0.516
+0500000US36067,Onondaga County,New York,"Onondaga County, New York",461809,urban,0.617,0.461
+0500000US37001,Alamance County,North Carolina,"Alamance County, North Carolina",166436,rural,0.613,0.63
+0500000US17043,DuPage County,Illinois,"DuPage County, Illinois",928589,urban,0.696,0.716
+0500000US40131,Rogers County,Oklahoma,"Rogers County, Oklahoma",91984,urban,0.617,0.693
+0500000US36019,Clinton County,New York,"Clinton County, New York",80695,rural,0.5329999999999999,0.718
+0500000US48485,Wichita County,Texas,"Wichita County, Texas",132064,rural,0.609,0.617
+0500000US29021,Buchanan County,Missouri,"Buchanan County, Missouri",88571,rural,0.613,0.7979999999999999
+0500000US26037,Clinton County,Michigan,"Clinton County, Michigan",79332,urban,0.626,0.585
+0500000US12031,Duval County,Florida,"Duval County, Florida",950181,urban,0.66,0.4850000000000001
+0500000US12119,Sumter County,Florida,"Sumter County, Florida",128754,rural,0.251,0.46799999999999997
+0500000US13073,Columbia County,Georgia,"Columbia County, Georgia",154291,urban,0.643,0.531
+0500000US55105,Rock County,Wisconsin,"Rock County, Wisconsin",163129,rural,0.672,0.606
+0500000US27109,Olmsted County,Minnesota,"Olmsted County, Minnesota",156277,rural,0.701,0.563
+0500000US55073,Marathon County,Wisconsin,"Marathon County, Wisconsin",135428,rural,0.6709999999999999,0.738
+0500000US39099,Mahoning County,Ohio,"Mahoning County, Ohio",229642,urban,0.611,0.555
+0500000US39103,Medina County,Ohio,"Medina County, Ohio",179146,urban,0.6709999999999999,0.721
+0500000US41059,Umatilla County,Oregon,"Umatilla County, Oregon",77516,rural,0.588,0.45699999999999996
+0500000US40017,Canadian County,Oklahoma,"Canadian County, Oklahoma",144447,urban,0.6859999999999999,0.7829999999999999
+0500000US23019,Penobscot County,Maine,"Penobscot County, Maine",151096,rural,0.594,0.645
+0500000US48251,Johnson County,Texas,"Johnson County, Texas",171361,urban,0.615,0.513
+0500000US48231,Hunt County,Texas,"Hunt County, Texas",96493,urban,0.612,0.508
+0500000US04003,Cochise County,Arizona,"Cochise County, Arizona",126770,rural,0.489,0.591
+0500000US42013,Blair County,Pennsylvania,"Blair County, Pennsylvania",122492,rural,0.605,0.4810000000000001
+0500000US26065,Ingham County,Michigan,"Ingham County, Michigan",292735,urban,0.643,0.502
+0500000US48497,Wise County,Texas,"Wise County, Texas",68305,urban,,0.632
+0500000US13223,Paulding County,Georgia,"Paulding County, Georgia",164044,urban,0.6729999999999999,0.8240000000000001
+0500000US55127,Walworth County,Wisconsin,"Walworth County, Wisconsin",103718,rural,0.6709999999999999,0.5710000000000001
+0500000US42011,Berks County,Pennsylvania,"Berks County, Pennsylvania",420152,urban,0.655,0.693
+0500000US42019,Butler County,Pennsylvania,"Butler County, Pennsylvania",187888,urban,0.63,0.483
+0500000US26017,Bay County,Michigan,"Bay County, Michigan",103923,rural,0.583,0.56
+0500000US28047,Harrison County,Mississippi,"Harrison County, Mississippi",206650,urban,0.622,0.617
+0500000US48303,Lubbock County,Texas,"Lubbock County, Texas",307412,urban,0.65,0.503
+0500000US39025,Clermont County,Ohio,"Clermont County, Ohio",205466,urban,0.653,0.51
+0500000US31153,Sarpy County,Nebraska,"Sarpy County, Nebraska",184459,urban,0.721,0.667
+0500000US31109,Lancaster County,Nebraska,"Lancaster County, Nebraska",317272,urban,0.721,0.456
+0500000US39119,Muskingum County,Ohio,"Muskingum County, Ohio",86183,rural,0.601,0.626
+0500000US05051,Garland County,Arkansas,"Garland County, Arkansas",99154,rural,0.522,0.5519999999999999
+0500000US36079,Putnam County,New York,"Putnam County, New York",98892,urban,0.653,0.49699999999999994
+0500000US20045,Douglas County,Kansas,"Douglas County, Kansas",121436,rural,0.71,0.518
+0500000US20173,Sedgwick County,Kansas,"Sedgwick County, Kansas",513607,urban,0.665,0.633
+0500000US20177,Shawnee County,Kansas,"Shawnee County, Kansas",177499,rural,0.623,0.5710000000000001
+0500000US29047,Clay County,Missouri,"Clay County, Missouri",246365,urban,0.6890000000000001,0.5009999999999999
+0500000US39009,Athens County,Ohio,"Athens County, Ohio",65818,rural,0.556,0.614
+0500000US06111,Ventura County,California,"Ventura County, California",850967,urban,0.65,0.479
+0500000US22051,Jefferson Parish,Louisiana,"Jefferson Parish, Louisiana",434051,urban,0.6409999999999999,0.649
+0500000US29510,St. Louis city,Missouri,"St. Louis city, Missouri",302838,urban,0.674,0.583
+0500000US39153,Summit County,Ohio,"Summit County, Ohio",541918,urban,0.649,0.6639999999999999
+0500000US40037,Creek County,Oklahoma,"Creek County, Oklahoma",71604,urban,0.57,0.628
+0500000US34037,Sussex County,New Jersey,"Sussex County, New Jersey",140799,urban,0.6940000000000001,0.57
+0500000US29077,Greene County,Missouri,"Greene County, Missouri",291923,urban,0.596,0.6489999999999999
+0500000US20209,Wyandotte County,Kansas,"Wyandotte County, Kansas",165324,urban,0.657,0.5209999999999999
+0500000US24009,Calvert County,Maryland,"Calvert County, Maryland",92003,urban,0.701,0.627
+0500000US26075,Jackson County,Michigan,"Jackson County, Michigan",158823,rural,0.5579999999999999,0.5730000000000001
+0500000US39007,Ashtabula County,Ohio,"Ashtabula County, Ohio",97493,rural,0.5670000000000001,0.456
+0500000US46099,Minnehaha County,South Dakota,"Minnehaha County, South Dakota",192876,rural,0.753,0.449
+0500000US36051,Livingston County,New York,"Livingston County, New York",63227,urban,0.5379999999999999,0.6240000000000001
+0500000US31055,Douglas County,Nebraska,"Douglas County, Nebraska",566880,urban,0.708,0.619
+0500000US13047,Catoosa County,Georgia,"Catoosa County, Georgia",67420,urban,,0.463
+0500000US55025,Dane County,Wisconsin,"Dane County, Wisconsin",542364,urban,0.716,0.49200000000000005
+0500000US28067,Jones County,Mississippi,"Jones County, Mississippi",68461,rural,,0.633
+0500000US55039,Fond du Lac County,Wisconsin,"Fond du Lac County, Wisconsin",103066,rural,0.657,0.799
+0500000US55059,Kenosha County,Wisconsin,"Kenosha County, Wisconsin",169290,urban,0.685,0.585
+0500000US39151,Stark County,Ohio,"Stark County, Ohio",371574,urban,0.619,0.693
+0500000US40031,Comanche County,Oklahoma,"Comanche County, Oklahoma",120422,rural,0.608,0.509
+0500000US39157,Tuscarawas County,Ohio,"Tuscarawas County, Ohio",92176,rural,0.634,0.622
+0500000US26155,Shiawassee County,Michigan,"Shiawassee County, Michigan",68192,rural,0.604,0.541
+0500000US39165,Warren County,Ohio,"Warren County, Ohio",232173,urban,0.66,0.64
+0500000US39133,Portage County,Ohio,"Portage County, Ohio",162927,urban,0.688,0.605
+0500000US39013,Belmont County,Ohio,"Belmont County, Ohio",67505,rural,0.514,0.307
+0500000US21227,Warren County,Kentucky,"Warren County, Kentucky",131264,rural,0.675,0.455
+0500000US53029,Island County,Washington,"Island County, Washington",84460,rural,0.5479999999999999,0.5310000000000001
+0500000US53035,Kitsap County,Washington,"Kitsap County, Washington",269805,urban,0.637,0.504
+0500000US53041,Lewis County,Washington,"Lewis County, Washington",79604,rural,0.531,0.7390000000000001
+0500000US39017,Butler County,Ohio,"Butler County, Ohio",382378,urban,0.638,0.669
+0500000US33013,Merrimack County,New Hampshire,"Merrimack County, New Hampshire",151132,rural,0.6709999999999999,0.6920000000000001
+0500000US39155,Trumbull County,Ohio,"Trumbull County, Ohio",198627,urban,0.5539999999999999,0.518
+0500000US18059,Hancock County,Indiana,"Hancock County, Indiana",76351,urban,0.652,0.5
+0500000US27141,Sherburne County,Minnesota,"Sherburne County, Minnesota",96036,urban,0.738,0.484
+0500000US35061,Valencia County,New Mexico,"Valencia County, New Mexico",76456,urban,0.51,0.591
+0500000US17019,Champaign County,Illinois,"Champaign County, Illinois",209983,rural,0.617,0.49099999999999994
+0500000US21111,Jefferson County,Kentucky,"Jefferson County, Kentucky",770517,urban,0.653,0.35300000000000004
+0500000US12099,Palm Beach County,Florida,"Palm Beach County, Florida",1485941,urban,0.593,0.715
+0500000US27131,Rice County,Minnesota,"Rice County, Minnesota",66523,rural,0.639,0.5569999999999999
+0500000US42079,Luzerne County,Pennsylvania,"Luzerne County, Pennsylvania",317646,urban,0.609,0.6399999999999999
+0500000US17179,Tazewell County,Illinois,"Tazewell County, Illinois",132328,urban,0.5920000000000001,0.513
+0500000US13057,Cherokee County,Georgia,"Cherokee County, Georgia",254149,urban,0.682,0.49599999999999994
+0500000US48381,Randall County,Texas,"Randall County, Texas",136271,urban,0.7040000000000001,0.486
+0500000US26125,Oakland County,Michigan,"Oakland County, Michigan",1259201,urban,0.6579999999999999,0.6030000000000001
+0500000US42075,Lebanon County,Pennsylvania,"Lebanon County, Pennsylvania",141314,rural,0.645,0.47600000000000003
+0500000US24510,Baltimore city,Maryland,"Baltimore city, Maryland",602495,urban,0.625,0.4010000000000001
+0500000US13015,Bartow County,Georgia,"Bartow County, Georgia",106408,urban,0.63,0.67
+0500000US08014,Broomfield County,Colorado,"Broomfield County, Colorado",69267,urban,,0.48
+0500000US12019,Clay County,Florida,"Clay County, Florida",216072,urban,0.62,0.44
+0500000US13095,Dougherty County,Georgia,"Dougherty County, Georgia",91243,rural,0.57,0.622
+0500000US21145,McCracken County,Kentucky,"McCracken County, Kentucky",65346,rural,0.5660000000000001,0.463
+0500000US26045,Eaton County,Michigan,"Eaton County, Michigan",109826,urban,0.622,0.4809999999999999
+0500000US08041,El Paso County,Colorado,"El Paso County, Colorado",713856,urban,0.688,0.741
+0500000US37155,Robeson County,North Carolina,"Robeson County, North Carolina",131831,rural,0.502,0.637
+0500000US48139,Ellis County,Texas,"Ellis County, Texas",179436,urban,0.6729999999999999,0.637
+0500000US42063,Indiana County,Pennsylvania,"Indiana County, Pennsylvania",84501,rural,0.544,0.524
+0500000US44003,Kent County,Rhode Island,"Kent County, Rhode Island",163861,urban,0.6409999999999999,0.483
+0500000US18105,Monroe County,Indiana,"Monroe County, Indiana",146917,rural,0.618,0.556
+0500000US05031,Craighead County,Arkansas,"Craighead County, Arkansas",108558,rural,0.628,0.63
+0500000US12001,Alachua County,Florida,"Alachua County, Florida",269956,urban,0.614,0.6509999999999999
+0500000US09015,Windham County,Connecticut,"Windham County, Connecticut",117027,urban,0.649,0.505
+0500000US18043,Floyd County,Indiana,"Floyd County, Indiana",77781,urban,0.6659999999999999,0.584
+0500000US22073,Ouachita Parish,Louisiana,"Ouachita Parish, Louisiana",154475,rural,0.5710000000000001,0.659
+0500000US09003,Hartford County,Connecticut,"Hartford County, Connecticut",892697,urban,0.657,0.721
+0500000US26121,Muskegon County,Michigan,"Muskegon County, Michigan",173588,rural,0.5770000000000001,0.49999999999999994
+0500000US42081,Lycoming County,Pennsylvania,"Lycoming County, Pennsylvania",113664,rural,0.584,0.591
+0500000US19061,Dubuque County,Iowa,"Dubuque County, Iowa",96854,rural,0.6559999999999999,0.6360000000000001
+0500000US19153,Polk County,Iowa,"Polk County, Iowa",487204,urban,0.718,0.7020000000000001
+0500000US19013,Black Hawk County,Iowa,"Black Hawk County, Iowa",132408,rural,0.6809999999999999,0.529
+0500000US42069,Lackawanna County,Pennsylvania,"Lackawanna County, Pennsylvania",210793,urban,0.609,0.583
+0500000US27123,Ramsey County,Minnesota,"Ramsey County, Minnesota",550210,urban,0.6809999999999999,0.639
+0500000US54061,Monongalia County,West Virginia,"Monongalia County, West Virginia",106420,rural,0.628,0.45600000000000007
+0500000US42007,Beaver County,Pennsylvania,"Beaver County, Pennsylvania",164742,urban,0.606,0.559
+0500000US48367,Parker County,Texas,"Parker County, Texas",138371,urban,0.609,0.5680000000000001
+0500000US13089,DeKalb County,Georgia,"DeKalb County, Georgia",756558,urban,0.7,0.7339999999999999
+0500000US12061,Indian River County,Florida,"Indian River County, Florida",157413,rural,0.485,0.4049999999999999
+0500000US13285,Troup County,Georgia,"Troup County, Georgia",70034,rural,,0.6759999999999999
+0500000US17089,Kane County,Illinois,"Kane County, Illinois",534216,urban,0.6890000000000001,0.743
+0500000US13115,Floyd County,Georgia,"Floyd County, Georgia",97927,rural,0.513,0.833
+0500000US42021,Cambria County,Pennsylvania,"Cambria County, Pennsylvania",131730,rural,0.563,0.499
+0500000US18141,St. Joseph County,Indiana,"St. Joseph County, Indiana",270771,urban,0.664,0.682
+0500000US13255,Spalding County,Georgia,"Spalding County, Georgia",66100,urban,0.52,0.611
+0500000US42037,Columbia County,Pennsylvania,"Columbia County, Pennsylvania",65456,rural,0.591,0.544
+0500000US26077,Kalamazoo County,Michigan,"Kalamazoo County, Michigan",264870,urban,0.667,0.5319999999999999
+0500000US42107,Schuylkill County,Pennsylvania,"Schuylkill County, Pennsylvania",142067,rural,0.564,0.4109999999999999
+0500000US01077,Lauderdale County,Alabama,"Lauderdale County, Alabama",92387,rural,0.578,0.5710000000000001
+0500000US01083,Limestone County,Alabama,"Limestone County, Alabama",96174,urban,0.5710000000000001,0.588
+0500000US13067,Cobb County,Georgia,"Cobb County, Georgia",756865,urban,0.708,0.42599999999999993
+0500000US37097,Iredell County,North Carolina,"Iredell County, North Carolina",178435,urban,0.6509999999999999,0.7439999999999999
+0500000US51510,Alexandria city,Virginia,"Alexandria city, Virginia",160530,urban,0.768,0.539
+0500000US51013,Arlington County,Virginia,"Arlington County, Virginia",237521,urban,0.802,0.746
+0500000US26073,Isabella County,Michigan,"Isabella County, Michigan",70562,rural,0.611,0.733
+0500000US18005,Bartholomew County,Indiana,"Bartholomew County, Indiana",82753,rural,0.629,0.6629999999999999
+0500000US17167,Sangamon County,Illinois,"Sangamon County, Illinois",195348,rural,0.645,0.511
+0500000US18163,Vanderburgh County,Indiana,"Vanderburgh County, Indiana",180974,urban,0.635,0.5000000000000001
+0500000US26093,Livingston County,Michigan,"Livingston County, Michigan",191224,urban,0.6609999999999999,0.674
+0500000US12021,Collier County,Florida,"Collier County, Florida",378488,urban,0.523,0.737
+0500000US48113,Dallas County,Texas,"Dallas County, Texas",2637772,urban,0.6890000000000001,0.616
+0500000US47113,Madison County,Tennessee,"Madison County, Tennessee",97605,rural,0.602,0.578
+0500000US01125,Tuscaloosa County,Alabama,"Tuscaloosa County, Alabama",208911,rural,0.607,0.5670000000000001
+0500000US04017,Navajo County,Arizona,"Navajo County, Arizona",110445,rural,0.449,0.515
+0500000US55089,Ozaukee County,Wisconsin,"Ozaukee County, Wisconsin",89147,urban,0.687,0.574
+0500000US27019,Carver County,Minnesota,"Carver County, Minnesota",103551,urban,0.7090000000000001,0.468
+0500000US39169,Wayne County,Ohio,"Wayne County, Ohio",115967,rural,0.63,0.6080000000000001
+0500000US42001,Adams County,Pennsylvania,"Adams County, Pennsylvania",102811,rural,0.622,0.5900000000000001
+0500000US36069,Ontario County,New York,"Ontario County, New York",109864,urban,0.635,0.5880000000000001
+0500000US16001,Ada County,Idaho,"Ada County, Idaho",469966,urban,0.659,0.648
+0500000US26087,Lapeer County,Michigan,"Lapeer County, Michigan",88028,urban,0.598,0.8130000000000002
+0500000US26091,Lenawee County,Michigan,"Lenawee County, Michigan",98266,rural,0.5820000000000001,0.721
+0500000US50007,Chittenden County,Vermont,"Chittenden County, Vermont",164572,rural,0.6990000000000001,0.6809999999999999
+0500000US48183,Gregg County,Texas,"Gregg County, Texas",123707,rural,0.619,0.602
+0500000US26005,Allegan County,Michigan,"Allegan County, Michigan",117327,rural,0.624,0.6150000000000001
+0500000US17113,McLean County,Illinois,"McLean County, Illinois",172828,rural,0.638,0.664
+0500000US26025,Calhoun County,Michigan,"Calhoun County, Michigan",134487,rural,0.608,0.851
+0500000US17099,LaSalle County,Illinois,"LaSalle County, Illinois",109430,rural,0.622,0.555
+0500000US37179,Union County,North Carolina,"Union County, North Carolina",235908,urban,0.674,0.415
+0500000US48397,Rockwall County,Texas,"Rockwall County, Texas",100657,urban,0.6940000000000001,0.5419999999999999
+0500000US37025,Cabarrus County,North Carolina,"Cabarrus County, North Carolina",211342,urban,0.6729999999999999,0.6609999999999999
+0500000US37035,Catawba County,North Carolina,"Catawba County, North Carolina",158652,urban,0.638,0.633
+0500000US51650,Hampton city,Virginia,"Hampton city, Virginia",134313,urban,0.6409999999999999,0.6970000000000001
+0500000US29165,Platte County,Missouri,"Platte County, Missouri",102985,urban,0.7,0.535
+0500000US17111,McHenry County,Illinois,"McHenry County, Illinois",308570,urban,0.705,0.44599999999999995
+0500000US37191,Wayne County,North Carolina,"Wayne County, North Carolina",123248,rural,0.62,0.705
+0500000US36085,Richmond County,New York,"Richmond County, New York",476179,urban,0.585,0.633
+0500000US28059,Jackson County,Mississippi,"Jackson County, Mississippi",143277,urban,0.589,0.696
+0500000US39089,Licking County,Ohio,"Licking County, Ohio",175769,urban,0.629,0.482
+0500000US45085,Sumter County,South Carolina,"Sumter County, South Carolina",106512,rural,0.591,0.57
+0500000US18089,Lake County,Indiana,"Lake County, Indiana",484411,urban,0.616,0.559
+0500000US36117,Wayne County,New York,"Wayne County, New York",90064,urban,0.635,0.423
+0500000US12005,Bay County,Florida,"Bay County, Florida",185287,rural,0.61,0.5730000000000001
+0500000US48257,Kaufman County,Texas,"Kaufman County, Texas",128622,urban,0.682,0.4059999999999999
+0500000US36011,Cayuga County,New York,"Cayuga County, New York",77145,rural,0.5579999999999999,0.599
+0500000US48021,Bastrop County,Texas,"Bastrop County, Texas",86976,urban,0.603,0.7090000000000001
+0500000US53063,Spokane County,Washington,"Spokane County, Washington",514631,urban,0.614,0.523
+0500000US33005,Cheshire County,New Hampshire,"Cheshire County, New Hampshire",76493,rural,0.649,0.531
+0500000US35001,Bernalillo County,New Mexico,"Bernalillo County, New Mexico",678701,urban,0.619,0.526
+0500000US36027,Dutchess County,New York,"Dutchess County, New York",293718,urban,0.617,0.436
+0500000US38015,Burleigh County,North Dakota,"Burleigh County, North Dakota",95273,rural,0.7090000000000001,0.688
+0500000US37109,Lincoln County,North Carolina,"Lincoln County, North Carolina",83770,urban,0.6559999999999999,0.7680000000000001
+0500000US55071,Manitowoc County,Wisconsin,"Manitowoc County, Wisconsin",79074,rural,0.619,0.597
+0500000US48209,Hays County,Texas,"Hays County, Texas",222631,urban,0.6809999999999999,0.564
+0500000US51680,Lynchburg city,Virginia,"Lynchburg city, Virginia",82126,urban,0.569,0.4610000000000001
+0500000US13045,Carroll County,Georgia,"Carroll County, Georgia",118121,urban,0.597,0.723
+0500000US35013,Doña Ana County,New Mexico,"Doña Ana County, New Mexico",217522,rural,0.5529999999999999,0.722
+0500000US48291,Liberty County,Texas,"Liberty County, Texas",86323,urban,0.506,0.517
+0500000US37081,Guilford County,North Carolina,"Guilford County, North Carolina",533670,urban,0.629,0.521
+0500000US37119,Mecklenburg County,North Carolina,"Mecklenburg County, North Carolina",1093901,urban,0.7090000000000001,0.506
+0500000US37171,Surry County,North Carolina,"Surry County, North Carolina",71948,rural,0.552,0.5820000000000001
+0500000US51550,Chesapeake city,Virginia,"Chesapeake city, Virginia",242634,urban,0.66,0.4809999999999999
+0500000US55101,Racine County,Wisconsin,"Racine County, Wisconsin",196584,rural,0.633,0.544
+0500000US48085,Collin County,Texas,"Collin County, Texas",1005146,urban,0.706,0.8009999999999999
+0500000US28035,Forrest County,Mississippi,"Forrest County, Mississippi",75036,rural,0.5720000000000001,0.535
+0500000US05125,Saline County,Arkansas,"Saline County, Arkansas",121421,urban,0.626,0.533
+0500000US39081,Jefferson County,Ohio,"Jefferson County, Ohio",65767,rural,0.516,0.43799999999999994
+0500000US34039,Union County,New Jersey,"Union County, New Jersey",558067,urban,0.7020000000000001,0.429
+0500000US29051,Cole County,Missouri,"Cole County, Missouri",76796,rural,,0.616
+0500000US06087,Santa Cruz County,California,"Santa Cruz County, California",274255,urban,0.637,0.585
+0500000US40119,Payne County,Oklahoma,"Payne County, Oklahoma",82040,rural,0.573,0.6139999999999999
+0500000US48439,Tarrant County,Texas,"Tarrant County, Texas",2084931,urban,0.6859999999999999,0.48700000000000004
+0500000US16055,Kootenai County,Idaho,"Kootenai County, Idaho",161505,rural,0.614,0.47
+0500000US39057,Greene County,Ohio,"Greene County, Ohio",167995,urban,0.625,0.681
+0500000US21047,Christian County,Kentucky,"Christian County, Kentucky",71671,urban,0.623,0.524
+0500000US46103,Pennington County,South Dakota,"Pennington County, South Dakota",111729,rural,0.6559999999999999,0.647
+0500000US25023,Plymouth County,Massachusetts,"Plymouth County, Massachusetts",518132,urban,0.6679999999999999,0.5920000000000001
+0500000US55097,Portage County,Wisconsin,"Portage County, Wisconsin",70942,rural,0.6509999999999999,0.574
+0500000US18057,Hamilton County,Indiana,"Hamilton County, Indiana",330086,urban,0.721,0.5569999999999999
+0500000US18127,Porter County,Indiana,"Porter County, Indiana",169594,urban,0.629,0.518
+0500000US12101,Pasco County,Florida,"Pasco County, Florida",539630,urban,0.536,0.531
+0500000US47179,Washington County,Tennessee,"Washington County, Tennessee",128607,rural,0.5720000000000001,0.585
+0500000US39023,Clark County,Ohio,"Clark County, Ohio",134585,rural,0.603,0.48
+0500000US39139,Richland County,Ohio,"Richland County, Ohio",121099,rural,0.5429999999999999,0.364
+0500000US35005,Chaves County,New Mexico,"Chaves County, New Mexico",64689,rural,0.55,0.7340000000000001
+0500000US18019,Clark County,Indiana,"Clark County, Indiana",117360,urban,0.68,0.6689999999999999
+0500000US39041,Delaware County,Ohio,"Delaware County, Ohio",204826,urban,0.6920000000000001,0.493
+0500000US29097,Jasper County,Missouri,"Jasper County, Missouri",120636,rural,0.635,0.498
+0500000US12081,Manatee County,Florida,"Manatee County, Florida",394855,urban,0.546,0.6240000000000001
+0500000US48121,Denton County,Texas,"Denton County, Texas",859064,urban,0.727,0.5840000000000001
+0500000US55141,Wood County,Wisconsin,"Wood County, Wisconsin",73055,rural,0.623,0.567
+0500000US55027,Dodge County,Wisconsin,"Dodge County, Wisconsin",87847,rural,0.669,0.605
+0500000US21015,Boone County,Kentucky,"Boone County, Kentucky",131533,urban,0.723,0.6709999999999999
+0500000US18039,Elkhart County,Indiana,"Elkhart County, Indiana",205560,rural,0.6779999999999999,0.7530000000000001
+0500000US36015,Chemung County,New York,"Chemung County, New York",84254,rural,0.57,0.475
+0500000US36109,Tompkins County,New York,"Tompkins County, New York",102793,rural,0.615,0.6789999999999999
+0500000US37071,Gaston County,North Carolina,"Gaston County, North Carolina",222846,urban,0.617,0.4059999999999999
+0500000US12011,Broward County,Florida,"Broward County, Florida",1951260,urban,0.649,0.7079999999999999
+0500000US12015,Charlotte County,Florida,"Charlotte County, Florida",184998,rural,0.402,0.74
+0500000US55133,Waukesha County,Wisconsin,"Waukesha County, Wisconsin",403072,urban,0.67,0.49800000000000005
+0500000US36093,Schenectady County,New York,"Schenectady County, New York",155350,urban,0.633,0.58
+0500000US44005,Newport County,Rhode Island,"Newport County, Rhode Island",82542,urban,0.6509999999999999,0.132
+0500000US51760,Richmond city,Virginia,"Richmond city, Virginia",228783,urban,0.6459999999999999,0.557
+0500000US41029,Jackson County,Oregon,"Jackson County, Oregon",219564,rural,0.578,0.804
+0500000US18011,Boone County,Indiana,"Boone County, Indiana",66999,urban,,0.6480000000000001
+0500000US23005,Cumberland County,Maine,"Cumberland County, Maine",293557,urban,0.6990000000000001,0.45299999999999996
+0500000US42025,Carbon County,Pennsylvania,"Carbon County, Pennsylvania",64227,urban,0.609,0.495
+0500000US40109,Oklahoma County,Oklahoma,"Oklahoma County, Oklahoma",792582,urban,0.6659999999999999,0.515
+0500000US29187,St. Francois County,Missouri,"St. Francois County, Missouri",66692,rural,0.517,0.7069999999999999
+0500000US18063,Hendricks County,Indiana,"Hendricks County, Indiana",167009,urban,0.696,0.5930000000000001
+0500000US26161,Washtenaw County,Michigan,"Washtenaw County, Michigan",370963,urban,0.643,0.58
+0500000US37157,Rockingham County,North Carolina,"Rockingham County, North Carolina",90690,urban,0.55,0.504
+0500000US37195,Wilson County,North Carolina,"Wilson County, North Carolina",81455,rural,0.627,0.528
+0500000US37151,Randolph County,North Carolina,"Randolph County, North Carolina",143351,urban,0.632,0.754
+0500000US41053,Polk County,Oregon,"Polk County, Oregon",85234,urban,0.614,0.551
+0500000US08123,Weld County,Colorado,"Weld County, Colorado",314305,urban,0.696,0.648
+0500000US42077,Lehigh County,Pennsylvania,"Lehigh County, Pennsylvania",368100,urban,0.647,0.521
+0500000US49053,Washington County,Utah,"Washington County, Utah",171700,rural,0.537,0.789
+0500000US21117,Kenton County,Kentucky,"Kenton County, Kentucky",166051,urban,0.69,0.5469999999999999
+0500000US13247,Rockdale County,Georgia,"Rockdale County, Georgia",90594,urban,0.608,0.7880000000000001
+0500000US35025,Lea County,New Mexico,"Lea County, New Mexico",69611,rural,0.603,0.507
+0500000US12103,Pinellas County,Florida,"Pinellas County, Florida",975280,urban,0.586,0.475
+0500000US39029,Columbiana County,Ohio,"Columbiana County, Ohio",102665,rural,0.565,0.469
+0500000US48027,Bell County,Texas,"Bell County, Texas",355642,urban,0.654,0.529
+0500000US48375,Potter County,Texas,"Potter County, Texas",119648,urban,0.604,0.48200000000000004
+0500000US13297,Walton County,Georgia,"Walton County, Georgia",93503,urban,0.615,0.503
+0500000US17201,Winnebago County,Illinois,"Winnebago County, Illinois",284081,urban,0.6459999999999999,0.611
+0500000US39113,Montgomery County,Ohio,"Montgomery County, Ohio",532331,urban,0.628,0.617
+0500000US18167,Vigo County,Indiana,"Vigo County, Indiana",107386,rural,0.612,0.7040000000000001
+0500000US37067,Forsyth County,North Carolina,"Forsyth County, North Carolina",379099,urban,0.61,0.523
+0500000US26021,Berrien County,Michigan,"Berrien County, Michigan",154141,rural,0.631,0.7519999999999999
+0500000US39141,Ross County,Ohio,"Ross County, Ohio",76931,rural,0.498,0.6940000000000001
+0500000US55087,Outagamie County,Wisconsin,"Outagamie County, Wisconsin",187365,rural,0.69,0.6119999999999999
+0500000US39063,Hancock County,Ohio,"Hancock County, Ohio",75930,rural,0.6890000000000001,0.638
+0500000US01003,Baldwin County,Alabama,"Baldwin County, Alabama",218022,rural,0.6,0.5650000000000001
+0500000US04015,Mohave County,Arizona,"Mohave County, Arizona",209550,rural,0.45299999999999996,0.519
+0500000US26111,Midland County,Michigan,"Midland County, Michigan",83209,rural,0.585,0.5429999999999999
+0500000US39085,Lake County,Ohio,"Lake County, Ohio",230514,urban,0.652,0.419
+0500000US35031,McKinley County,New Mexico,"McKinley County, New Mexico",72290,rural,0.479,0.489
+0500000US41071,Yamhill County,Oregon,"Yamhill County, Oregon",107002,urban,0.601,0.5609999999999999
+0500000US12085,Martin County,Florida,"Martin County, Florida",160912,urban,0.473,0.7390000000000001
+0500000US33011,Hillsborough County,New Hampshire,"Hillsborough County, New Hampshire",415247,urban,0.7,0.55
+0500000US36001,Albany County,New York,"Albany County, New York",307117,urban,0.647,0.584
+0500000US01127,Walker County,Alabama,"Walker County, Alabama",63711,urban,0.539,0.7580000000000001
+0500000US36007,Broome County,New York,"Broome County, New York",191659,rural,0.584,0.601
+0500000US48099,Coryell County,Texas,"Coryell County, Texas",74808,urban,0.535,0.46
+0500000US24037,St. Mary's County,Maryland,"St. Mary's County, Maryland",112664,rural,0.6629999999999999,0.463
+0500000US04019,Pima County,Arizona,"Pima County, Arizona",1039073,urban,0.5760000000000001,0.473
+0500000US55109,St. Croix County,Wisconsin,"St. Croix County, Wisconsin",89694,urban,0.725,0.6090000000000001
+0500000US56025,Natrona County,Wyoming,"Natrona County, Wyoming",79115,rural,0.684,0.429
+0500000US51800,Suffolk city,Virginia,"Suffolk city, Virginia",91185,urban,0.677,0.449
+0500000US56021,Laramie County,Wyoming,"Laramie County, Wyoming",98976,rural,0.638,0.6569999999999999
+0500000US19193,Woodbury County,Iowa,"Woodbury County, Iowa",102539,rural,0.685,0.66
+0500000US35049,Santa Fe County,New Mexico,"Santa Fe County, New Mexico",150056,rural,0.579,0.53
+0500000US47011,Bradley County,Tennessee,"Bradley County, Tennessee",106727,rural,0.619,0.5640000000000002
+0500000US36005,Bronx County,New York,"Bronx County, New York",1432132,urban,0.598,0.20800000000000005
+0500000US36055,Monroe County,New York,"Monroe County, New York",742474,urban,0.63,0.48900000000000005
+0500000US12091,Okaloosa County,Florida,"Okaloosa County, Florida",207269,rural,0.627,0.407
+0500000US39109,Miami County,Ohio,"Miami County, Ohio",106222,urban,0.638,0.49
+0500000US29037,Cass County,Missouri,"Cass County, Missouri",104954,urban,0.662,0.49800000000000005
+0500000US28081,Lee County,Mississippi,"Lee County, Mississippi",85202,rural,0.623,0.7040000000000001
+0500000US55055,Jefferson County,Wisconsin,"Jefferson County, Wisconsin",85129,rural,0.703,0.621
+0500000US39093,Lorain County,Ohio,"Lorain County, Ohio",309461,urban,0.614,0.5650000000000001
+0500000US36089,St. Lawrence County,New York,"St. Lawrence County, New York",108047,rural,0.5379999999999999,0.434
+0500000US35035,Otero County,New Mexico,"Otero County, New Mexico",66781,rural,0.505,0.52
+0500000US06029,Kern County,California,"Kern County, California",896764,urban,0.578,0.49699999999999994
+0500000US06071,San Bernardino County,California,"San Bernardino County, California",2171603,urban,0.617,0.6360000000000001
+0500000US17001,Adams County,Illinois,"Adams County, Illinois",65691,rural,0.669,0.5569999999999999
+0500000US39045,Fairfield County,Ohio,"Fairfield County, Ohio",155782,urban,0.614,0.7689999999999999
+0500000US36083,Rensselaer County,New York,"Rensselaer County, New York",159442,urban,0.63,0.555
+0500000US51770,Roanoke city,Virginia,"Roanoke city, Virginia",99920,urban,0.642,0.657
+0500000US48181,Grayson County,Texas,"Grayson County, Texas",133991,rural,0.609,0.7299999999999999
+0500000US51710,Norfolk city,Virginia,"Norfolk city, Virginia",244076,urban,0.693,0.6309999999999999
+0500000US20103,Leavenworth County,Kansas,"Leavenworth County, Kansas",81352,urban,0.605,0.4649999999999999
+0500000US55009,Brown County,Wisconsin,"Brown County, Wisconsin",263378,urban,0.679,0.49800000000000005
+0500000US51700,Newport News city,Virginia,"Newport News city, Virginia",178626,urban,0.667,0.519
+0500000US55063,La Crosse County,Wisconsin,"La Crosse County, Wisconsin",118230,rural,0.6709999999999999,0.47800000000000004
+0500000US48329,Midland County,Texas,"Midland County, Texas",172578,rural,0.725,0.549
+0500000US55131,Washington County,Wisconsin,"Washington County, Wisconsin",135693,urban,0.685,0.643
+0500000US34017,Hudson County,New Jersey,"Hudson County, New Jersey",676061,urban,0.701,0.675
+0500000US17037,DeKalb County,Illinois,"DeKalb County, Illinois",104143,urban,0.667,0.757
+0500000US12017,Citrus County,Florida,"Citrus County, Florida",147929,rural,0.38299999999999995,0.574
+0500000US20161,Riley County,Kansas,"Riley County, Kansas",73703,rural,0.716,0.562
+0500000US21059,Daviess County,Kentucky,"Daviess County, Kentucky",101104,rural,0.615,0.105
+0500000US39173,Wood County,Ohio,"Wood County, Ohio",130696,urban,0.6829999999999999,0.605
+0500000US17093,Kendall County,Illinois,"Kendall County, Illinois",127915,urban,0.7170000000000001,0.613
+0500000US35043,Sandoval County,New Mexico,"Sandoval County, New Mexico",145179,urban,0.584,0.41600000000000004
+0500000US37045,Cleveland County,North Carolina,"Cleveland County, North Carolina",97645,rural,0.539,0.581
+0500000US55035,Eau Claire County,Wisconsin,"Eau Claire County, Wisconsin",104534,rural,0.664,0.6940000000000001
+0500000US17119,Madison County,Illinois,"Madison County, Illinois",264461,urban,0.647,0.6669999999999999
+0500000US48491,Williamson County,Texas,"Williamson County, Texas",566719,urban,0.6940000000000001,0.742
+0500000US39145,Scioto County,Ohio,"Scioto County, Ohio",75502,rural,0.486,0.376
+0500000US55117,Sheboygan County,Wisconsin,"Sheboygan County, Wisconsin",115456,rural,0.6559999999999999,0.524
+0500000US55139,Winnebago County,Wisconsin,"Winnebago County, Wisconsin",171020,rural,0.652,0.5710000000000001
+0500000US12083,Marion County,Florida,"Marion County, Florida",359977,urban,0.46299999999999997,0.537
+0500000US13127,Glynn County,Georgia,"Glynn County, Georgia",85219,rural,0.607,0.632
+0500000US37129,New Hanover County,North Carolina,"New Hanover County, North Carolina",232274,urban,0.609,0.498
+0500000US45079,Richland County,South Carolina,"Richland County, South Carolina",414576,urban,0.6559999999999999,0.48499999999999993
+0500000US06017,El Dorado County,California,"El Dorado County, California",190678,urban,0.594,0.532
+0500000US17163,St. Clair County,Illinois,"St. Clair County, Illinois",261059,urban,0.636,0.508
+0500000US30111,Yellowstone County,Montana,"Yellowstone County, Montana",160137,rural,0.6579999999999999,0.36499999999999994
+0500000US22019,Calcasieu Parish,Louisiana,"Calcasieu Parish, Louisiana",203112,rural,0.5920000000000001,0.523
+0500000US47141,Putnam County,Tennessee,"Putnam County, Tennessee",78843,rural,0.604,0.757
+0500000US48039,Brazoria County,Texas,"Brazoria County, Texas",370200,urban,0.624,0.5249999999999999
+0500000US47059,Greene County,Tennessee,"Greene County, Tennessee",69087,rural,0.5379999999999999,0.523
+0500000US42129,Westmoreland County,Pennsylvania,"Westmoreland County, Pennsylvania",350611,urban,0.606,0.592
+0500000US06067,Sacramento County,California,"Sacramento County, California",1540975,urban,0.631,0.61
+0500000US17143,Peoria County,Illinois,"Peoria County, Illinois",180621,urban,0.61,0.52
+0500000US27037,Dakota County,Minnesota,"Dakota County, Minnesota",425423,urban,0.7190000000000001,0.7120000000000001
+0500000US45031,Darlington County,South Carolina,"Darlington County, South Carolina",66802,rural,0.494,0.511
+0500000US12117,Seminole County,Florida,"Seminole County, Florida",467832,urban,0.674,0.523
+0500000US13013,Barrow County,Georgia,"Barrow County, Georgia",80809,urban,0.6609999999999999,0.689
+0500000US06007,Butte County,California,"Butte County, California",231256,rural,0.574,0.643
+0500000US21037,Campbell County,Kentucky,"Campbell County, Kentucky",93152,urban,0.659,0.535
+0500000US17199,Williamson County,Illinois,"Williamson County, Illinois",67056,rural,0.589,0.573
+0500000US36101,Steuben County,New York,"Steuben County, New York",95796,rural,0.588,0.64
+0500000US37063,Durham County,North Carolina,"Durham County, North Carolina",316739,urban,0.6829999999999999,0.514
+0500000US37135,Orange County,North Carolina,"Orange County, North Carolina",146027,urban,0.628,0.423
+0500000US25015,Hampshire County,Massachusetts,"Hampshire County, Massachusetts",161355,urban,0.625,0.397
+0500000US29043,Christian County,Missouri,"Christian County, Missouri",86983,urban,0.625,0.682
+0500000US13097,Douglas County,Georgia,"Douglas County, Georgia",145331,urban,0.6579999999999999,0.595
+0500000US39003,Allen County,Ohio,"Allen County, Ohio",102663,rural,0.624,0.681
+0500000US01081,Lee County,Alabama,"Lee County, Alabama",163941,rural,0.595,0.609
+0500000US26145,Saginaw County,Michigan,"Saginaw County, Michigan",190800,rural,0.57,0.725
+0500000US42085,Mercer County,Pennsylvania,"Mercer County, Pennsylvania",110683,urban,0.556,0.767
+0500000US51061,Fauquier County,Virginia,"Fauquier County, Virginia",70675,urban,0.68,0.45899999999999996
+0500000US42125,Washington County,Pennsylvania,"Washington County, Pennsylvania",207346,urban,0.63,0.39299999999999996
+0500000US36063,Niagara County,New York,"Niagara County, New York",210433,urban,0.606,0.6839999999999999
+0500000US13153,Houston County,Georgia,"Houston County, Georgia",155469,rural,0.66,0.629
+0500000US23001,Androscoggin County,Maine,"Androscoggin County, Maine",107679,rural,0.6509999999999999,0.48699999999999993
+0500000US21185,Oldham County,Kentucky,"Oldham County, Kentucky",66470,urban,0.636,0.574
+0500000US42039,Crawford County,Pennsylvania,"Crawford County, Pennsylvania",85063,rural,0.588,0.5369999999999999
+0500000US27003,Anoka County,Minnesota,"Anoka County, Minnesota",353813,urban,0.718,0.6809999999999999
+0500000US45075,Orangeburg County,South Carolina,"Orangeburg County, South Carolina",86934,rural,0.54,0.632
+0500000US48201,Harris County,Texas,"Harris County, Texas",4698619,urban,0.6729999999999999,0.48800000000000004
+0500000US18081,Johnson County,Indiana,"Johnson County, Indiana",156225,urban,0.71,0.601
+0500000US39049,Franklin County,Ohio,"Franklin County, Ohio",1310300,urban,0.693,0.576
+0500000US05143,Washington County,Arkansas,"Washington County, Arkansas",236961,urban,0.642,0.562
+0500000US26049,Genesee County,Michigan,"Genesee County, Michigan",406892,urban,0.593,0.6030000000000001
+0500000US33009,Grafton County,New Hampshire,"Grafton County, New Hampshire",89786,rural,0.635,0.571
+0500000US39101,Marion County,Ohio,"Marion County, Ohio",65256,rural,0.536,0.512
+0500000US30063,Missoula County,Montana,"Missoula County, Montana",118791,rural,0.713,0.609
+0500000US36111,Ulster County,New York,"Ulster County, New York",178599,rural,0.614,0.785
+0500000US45013,Beaufort County,South Carolina,"Beaufort County, South Carolina",188715,rural,0.546,0.6410000000000001
+0500000US34011,Cumberland County,New Jersey,"Cumberland County, New Jersey",150972,rural,0.546,0.474
+0500000US25027,Worcester County,Massachusetts,"Worcester County, Massachusetts",830839,urban,0.66,0.44299999999999995
+0500000US47187,Williamson County,Tennessee,"Williamson County, Tennessee",231729,urban,0.695,0.603
+0500000US04025,Yavapai County,Arizona,"Yavapai County, Arizona",231993,rural,0.47700000000000004,0.43
+0500000US41067,Washington County,Oregon,"Washington County, Oregon",597695,urban,0.693,0.621
+0500000US26081,Kent County,Michigan,"Kent County, Michigan",653786,urban,0.698,0.512
+0500000US29071,Franklin County,Missouri,"Franklin County, Missouri",103670,urban,0.649,0.7310000000000001
+0500000US19155,Pottawattamie County,Iowa,"Pottawattamie County, Iowa",93533,urban,0.645,0.55
+0500000US36087,Rockland County,New York,"Rockland County, New York",325695,urban,0.629,0.546
+0500000US24013,Carroll County,Maryland,"Carroll County, Maryland",168429,urban,0.6659999999999999,0.649
+0500000US04027,Yuma County,Arizona,"Yuma County, Arizona",212128,rural,0.527,0.549
+0500000US16005,Bannock County,Idaho,"Bannock County, Idaho",87138,rural,0.612,0.606
+0500000US05131,Sebastian County,Arkansas,"Sebastian County, Arkansas",127753,urban,0.613,0.551
+0500000US06065,Riverside County,California,"Riverside County, California",2450758,urban,0.602,0.355
+0500000US01069,Houston County,Alabama,"Houston County, Alabama",104722,rural,0.574,0.5989999999999999
+0500000US01121,Talladega County,Alabama,"Talladega County, Alabama",79828,rural,0.535,0.556
+0500000US29099,Jefferson County,Missouri,"Jefferson County, Missouri",224347,urban,0.6659999999999999,0.5419999999999999
+0500000US55079,Milwaukee County,Wisconsin,"Milwaukee County, Wisconsin",948201,urban,0.649,0.602
+0500000US26139,Ottawa County,Michigan,"Ottawa County, Michigan",290494,urban,0.679,0.41400000000000003
