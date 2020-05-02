@@ -165,7 +165,7 @@ class Population:
         census['travel'] = census[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
         census = census.sort_index()
         if wide:
-            raise NotImplemented()
+            raise NotImplementedError("Wide format is not implemented.")
         return census
         
     def check_location_profiles(self):
