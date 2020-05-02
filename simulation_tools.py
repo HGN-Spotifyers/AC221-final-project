@@ -372,7 +372,7 @@ class Metric:
         """
             
             An object that represents a measure derived from population data.
-                The `before` and `after` objects must have`people` and `census` properties.
+                The `before` and `after` objects must have `people` and `census` properties.
                 The metric is calculated with and without perfect information, for comparison.
         
             :param before: A table of people and their characteristics before the change.
@@ -389,9 +389,13 @@ class Metric:
                     high proportion of grocery travel and low propertion of work and social travel.
                     
         """
-        
+
+        # Get tables from objects:
+        before_people = before.people.copy()
+        after_people = after.people.copy()
+
         # Check inputs:
-        assert len(before) == len(after)
+        assert len(before_people) == len(after_people)
         
         valid_methods = ['median_person','average_person','skews_grocery']
         assert method in valid_methods, "{} is not a valid method: {} .".format(
@@ -404,11 +408,11 @@ class Metric:
         # Store inputs:
         self._random_state = random_state
         self._method = method
-        self._before = before.copy()
-        self._after = after.copy()
+        self._before = before
+        self._after = after
         
         # Get/set helper values:
-        N = len(before)
+        N = len(before_people)
         
         if method=="median_person":
             
@@ -454,16 +458,14 @@ class Metric:
             
         # Compute results:
         group_cols = ['population_name','location_name']
-        before = before.copy()
-        after = after.copy()
-        results = pd.concat([before,after],axis=0,sort=False)[group_cols].drop_duplicates()
+        results = pd.concat([before_people,after_people],axis=0,sort=False)[group_cols].drop_duplicates()
         results = results.set_index(group_cols).sort_index()
-        results['actual_before'] = _actual(before).groupby(group_cols,sort=True)['measure'].apply(_measure)
-        results['actual_after'] = _actual(after).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['actual_before'] = _actual(before_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['actual_after'] = _actual(after_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
         results['actual_delta'] = results['actual_after'] - results['actual_before']
         results['actual_change'] = results['actual_delta']/results['actual_before']
-        results['observed_before'] = _observed(before).groupby(group_cols,sort=True)['measure'].apply(_measure)
-        results['observed_after'] = _observed(after).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['observed_before'] = _observed(before_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['observed_after'] = _observed(after_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
         results['observed_delta'] = results['observed_after'] - results['observed_before']
         results['observed_change'] = results['observed_delta']/results['observed_before']
             
@@ -480,7 +482,7 @@ class Metric:
         
     @property
     def results(self):
-        """Results (before,after,delta) for both ground truth and observed measure."""
+        """Results (before_people,after_people,delta) for both ground truth and observed measure."""
         return self._results
     
     def __str__(self):
@@ -549,14 +551,14 @@ class Experiment:
             population = Population(location_attributes,location_profiles,population_name=population_name,random_state=rs1)
             if show_progress: progress_bar.set_description('transformation')
             transformation = Transformation(population,behavior=behavior,random_state=rs2)
-            before = population.people
-            after = transformation.people
             if show_progress: progress_bar.set_description('metric')
-            metric = Metric(before,after,method=method,random_state=rs3)
+            before = population
+            after = transformation
+            metric = Metric(population,transformation,method=method,random_state=rs3)
             # Append results:
             if show_progress: progress_bar.set_description('')
-            self._before.append(before)
-            self._after.append(after)
+            self._before.append(before.people)
+            self._after.append(after.people)
             self._results.append(metric.results)
             if show_progress: progress_bar.update()
         if show_progress: progress_bar.close()
