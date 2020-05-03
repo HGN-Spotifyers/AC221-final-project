@@ -483,10 +483,10 @@ class Metric:
             def _actual(df):
                 df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
                 return df
-            def _observed(df):
+            def _observed(df, rate):
                 df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
                 df['measure'] = np.where(df['phoneownership']==1,df['measure'],np.nan)
-                df['backlash'] = np.random.binomial(1,0.35,len(df))
+                df['backlash'] = np.random.binomial(1,rate,len(df))
                 df['measure'] = np.where(df['backlash']==0,df['measure'],np.nan)
                 return df
             def _measure(vals):
@@ -501,8 +501,8 @@ class Metric:
         results['actual_after'] = _actual(after_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
         results['actual_delta'] = results['actual_after'] - results['actual_before']
         results['actual_change'] = results['actual_delta']/results['actual_before']
-        results['observed_before'] = _observed(before_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
-        results['observed_after'] = _observed(after_people).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['observed_before'] = _observed(before_people, 0).groupby(group_cols,sort=True)['measure'].apply(_measure)
+        results['observed_after'] = _observed(after_people, 0.35).groupby(group_cols,sort=True)['measure'].apply(_measure)
         results['observed_delta'] = results['observed_after'] - results['observed_before']
         results['observed_change'] = results['observed_delta']/results['observed_before']
             
