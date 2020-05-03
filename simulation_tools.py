@@ -325,7 +325,7 @@ class Transformation:
             
         elif behavior=='partial_compliance':
         
-            partial_compliance_rate = 0.50
+            partial_compliance_rate = 0.40
             people['compliant'] = np.random.binomial(1,partial_compliance_rate,size=N)
             people['worktravel'] = np.where(people['compliant']==1,0.0,people['worktravel'])
             people['socialtravel'] = 0.0
@@ -387,6 +387,10 @@ class Metric:
                 - "average_person" : Returns the total travel of average (mean) person.
                 - "skews_grocery" : Returns the median observed travel using a
                     high proportion of grocery travel and low propertion of work and social travel.
+                - "skews_work" : Returns the median observed travel using a
+                    high proportion of work travel and low propertion of grocery and social travel.
+                - "skews_backlash" : Sets a random proportion (based on p = 0.3) of smartphones to disappear due to people 
+                    attempt to avoid being tracked (only affects the after metrics)
                     
         """
 
@@ -397,7 +401,7 @@ class Metric:
         # Check inputs:
         assert len(before_people) == len(after_people)
         
-        valid_methods = ['median_person','average_person','skews_grocery']
+        valid_methods = ['median_person','average_person','skews_grocery', 'skews_work', 'backlash']
         assert metric_method in valid_methods, "{} is not a valid method: {} .".format(
             metric_method,", ".join(valid_methods)
         )
@@ -454,7 +458,40 @@ class Metric:
                 df['measure'] = np.where(df['phoneownership']==1,df['measure'],np.nan)
                 return df
             def _measure(vals):
-                return np.nanmedian(vals)
+                return np.nanmean(vals)
+            
+        elif metric_method=="skews_work":
+            
+            captured_pct_work = 0.8
+            captured_pct_other = 0.3
+            
+            def _actual(df):
+                df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
+                return df
+            def _observed(df):
+                df['measure'] = 0
+                df['measure'] += df['worktravel']*captured_pct_work
+                df['measure'] += df['socialtravel']*captured_pct_other
+                df['measure'] += df['grocerytravel']*captured_pct_other
+                df['measure'] = np.where(df['phoneownership']==1,df['measure'],np.nan)
+                return df
+            def _measure(vals):
+                return np.nanmean(vals)
+            
+        elif metric_method=="backlash":
+            
+            def _actual(df):
+                df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
+                return df
+            def _observed(df):
+                df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
+                df['measure'] = np.where(df['phoneownership']==1,df['measure'],np.nan)
+                df['backlash'] = np.random.binomial(1,0.35,len(df))
+                df['measure'] = np.where(df['backlash']==0,df['measure'],np.nan)
+                return df
+            def _measure(vals):
+                return np.nanmean(vals)
+            
             
         # Compute results:
         group_cols = ['population_name','location_name']
