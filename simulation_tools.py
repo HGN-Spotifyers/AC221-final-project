@@ -423,7 +423,7 @@ class Metric:
             def _actual(df):
                 df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
                 return df
-            def _observed(df):
+            def _observed(df, rate):
                 df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
                 df['measure'] = np.where(df['phoneownership']==1,df['measure'],np.nan)
                 return df
@@ -435,7 +435,7 @@ class Metric:
             def _actual(df):
                 df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
                 return df
-            def _observed(df):
+            def _observed(df, rate):
                 df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
                 df['measure'] = np.where(df['phoneownership']==1,df['measure'],np.nan)
                 return df
@@ -450,7 +450,7 @@ class Metric:
             def _actual(df):
                 df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
                 return df
-            def _observed(df):
+            def _observed(df, rate):
                 df['measure'] = 0
                 df['measure'] += df['worktravel']*captured_pct_other
                 df['measure'] += df['socialtravel']*captured_pct_other
@@ -468,7 +468,7 @@ class Metric:
             def _actual(df):
                 df['measure'] = df[['worktravel','socialtravel','grocerytravel']].sum(axis=1)
                 return df
-            def _observed(df):
+            def _observed(df, rate):
                 df['measure'] = 0
                 df['measure'] += df['worktravel']*captured_pct_work
                 df['measure'] += df['socialtravel']*captured_pct_other
